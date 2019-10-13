@@ -8,14 +8,14 @@ import ClassCounter from './components/useState/ClassCounter';
 import HookCounter from './components/useState/HookCounter';
 import HookCounterTwo from './components/useState/HookCounterTwo';
 
-import HookCounterOne from './components/userEffect/HookCounterOne'
-import ClassCounterOne from './components/userEffect/ClassCounterOne';
-import ClassMouse from './components/userEffect/ClassMouse';
-import HookMouse from './components/userEffect/HookMouse';
-import MouseContainer from './components/userEffect/MouseContainer';
-import IntervalClassCounter from './components/userEffect/IntervalClassCounter';
-import HookIntervalCounter from './components/userEffect/HookIntervalCounter';
-import DataFetching from './components/userEffect/DataFetching';
+import HookCounterOne from './components/useEffect/HookCounterOne'
+import ClassCounterOne from './components/useEffect/ClassCounterOne';
+import ClassMouse from './components/useEffect/ClassMouse';
+import HookMouse from './components/useEffect/HookMouse';
+import MouseContainer from './components/useEffect/MouseContainer';
+import IntervalClassCounter from './components/useEffect/IntervalClassCounter';
+import HookIntervalCounter from './components/useEffect/HookIntervalCounter';
+import DataFetching from './components/useEffect/DataFetching';
 // import ComponentC from './components/useContext/ComponentC';
 import CounterOne from './components/useReducer/CounterOne';
 import CounterTwo from './components/useReducer/CounterTwo';
@@ -23,14 +23,19 @@ import CounterThree from './components/useReducer/CounterThree';
 import ComponentA from './components/useReducerAndContext/ComponentA';
 import ComponentB from './components/useReducerAndContext/ComponentB';
 import ComponentC from './components/useReducerAndContext/ComponentC';
-import DataFetchingOne from './components/userEffect/DataFetchingOne';
-import DataFetchingTwo from './components/userEffect/DataFetchingTwo';
+import DataFetchingOne from './components/useEffect/DataFetchingOne';
+import DataFetchingTwo from './components/useEffect/DataFetchingTwo';
 import ParentComponent from './components/useCallBack/ParentComponent';
 import useMemoCounter from './components/useMemo/UseMemoCounter';
 import UseMemoCounter from './components/useMemo/UseMemoCounter';
 import FocusInput from './components/useRef/FocusInput';
 import ClassTimer from './components/useRef/ClassTimer';
 import HookTimer from './components/useRef/HookTimer';
+import DocTitleOne from './components/cusHooks/DocTitleOne';
+import DocTitleTwo from './components/cusHooks/DocTitleTwo';
+import CusCounter from './components/cusCounter/CusCounter';
+import CusCounterTwo from './components/cusCounter/CusCounterTwo';
+import UserForm from './components/userForm/UserForm';
 
 export const UserContext = React.createContext()
 export const ChannelContext = React.createContext()
@@ -93,8 +98,16 @@ function App() {
 
         {/* <UseMemoCounter/> */}
         {/* <FocusInput/> */}
-        <ClassTimer/>
-        <HookTimer/>
+        {/* <ClassTimer/> */}
+        {/* <HookTimer/> */}
+
+        {/* <DocTitleOne/> */}
+        {/* <DocTitleTwo/> */}
+
+        {/* <CusCounter/> */}
+        {/* <CusCounterTwo/> */}
+
+        <UserForm/>
       </div>
     // </CountContext.Provider>
   );
