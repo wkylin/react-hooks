@@ -1,9 +1,9 @@
 import React from 'react';
 import './App.css';
-import{ MovieContext} from "./MovieContext"
-import MovieList from './MovieList';
-import ChangeContext from "./ChangeContext"
-import NavBar from "./NavBar"
+import{ MovieContext} from "./components/moveList/MovieContext.js"
+import MovieList from './components/moveList/MovieList.js';
+import ChangeContext from "./components/moveList/ChangeContext.js"
+import NavBar from "./components/moveList/NavBar.js"
 function App() {
   return (
     <MovieContext>
