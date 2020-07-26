@@ -3,6 +3,7 @@ import './App.css';
 import MoveListApp from "./components/moveList/MoveListApp";
 import useWindowSize from './components/useWindowSize/useWindowSize';
 import useEffectExceptOnMount from './components/useEffectExceptOnMount/useEffectExceptOnMount';
+import DebouncedInput from './components/DebouncedInput/DebouncedInput';
 
 function App() {
   const [width, height] = useWindowSize();
@@ -17,6 +18,13 @@ function App() {
   
   return (
     <>
+      <DebouncedInput
+        placeholder='init value'
+        onDebouncedValChange={val => {
+          console.log("called with val ", val);
+        }}
+        delay={300}
+      />
       <p>Window Width: {width}; Window Height: {height}</p>
       <MoveListApp />
     </>
