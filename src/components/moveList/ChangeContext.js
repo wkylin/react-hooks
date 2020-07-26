@@ -1,7 +1,9 @@
 import React,{useContext,useState} from  'react'
 import {MyContext} from "./MovieContext";
+import { uuid } from 'uuidv4';
 
 function ChangeContext() {
+  // eslint-disable-next-line no-unused-vars
   const [NewContext,setNewContext] =  useContext(MyContext);
   const [name,setName] = useState('');
   const [price,setPrice] = useState(0);
@@ -13,7 +15,7 @@ function ChangeContext() {
   }
   const changeValue = (event)=>{
     event.preventDefault();
-    setNewContext(prevValue=> [...prevValue , {name : name, Price : price}]);
+    setNewContext(prevValue=> [...prevValue , {name : name, Price : price, id: uuid()}]);
   }
   return (
     <div>

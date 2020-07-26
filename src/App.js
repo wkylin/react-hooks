@@ -1,16 +1,25 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './App.css';
-import{ MovieContext} from "./components/moveList/MovieContext.js"
-import MovieList from './components/moveList/MovieList.js';
-import ChangeContext from "./components/moveList/ChangeContext.js"
-import NavBar from "./components/moveList/NavBar.js"
+import MoveListApp from "./components/moveList/MoveListApp";
+import useWindowSize from './components/useWindowSize/useWindowSize';
+import useEffectExceptOnMount from './components/useEffectExceptOnMount/useEffectExceptOnMount';
+
 function App() {
+  const [width, height] = useWindowSize();
+  
+  useEffectExceptOnMount(() => {
+    console.log('except on mount');
+  }, [width]);
+  
+  useEffect(() => {
+    console.log('use effect on mount');
+  }, [width]);
+  
   return (
-    <MovieContext>
-      <NavBar />
-      <ChangeContext/>
-      <MovieList/>
-    </MovieContext>
+    <>
+      <p>Window Width: {width}; Window Height: {height}</p>
+      <MoveListApp />
+    </>
   );
 }
 

@@ -7,9 +7,10 @@ function MovieList() {
     <div>
       {
         NewContext.map((movies)=>(
-          <React.Fragment>
+          <React.Fragment key={movies.id}>
             <h3>{movies.name}</h3>
             <p>{movies.Price}</p>
+            <p>{movies.id}</p>
           </React.Fragment>
         ))
       }
