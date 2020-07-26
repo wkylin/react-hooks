@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import './App.css';
 import MoveListApp from "./components/moveList/MoveListApp";
+import UseMemoDemo from './components/useMemo/UseMemoDemo';
 import useWindowSize from './components/useWindowSize/useWindowSize';
 import useEffectExceptOnMount from './components/useEffectExceptOnMount/useEffectExceptOnMount';
 import DebouncedInput from './components/DebouncedInput/DebouncedInput';
@@ -25,6 +26,7 @@ function App() {
         }}
         delay={300}
       />
+      <UseMemoDemo />
       <p>Window Width: {width}; Window Height: {height}</p>
       <MoveListApp />
     </>
