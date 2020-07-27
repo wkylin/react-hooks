@@ -6,6 +6,9 @@ import useWindowSize from './components/useWindowSize/useWindowSize';
 import useEffectExceptOnMount from './components/useEffectExceptOnMount/useEffectExceptOnMount';
 import DebouncedInput from './components/DebouncedInput/DebouncedInput';
 
+const userLang = navigator.language;
+const defaultLocale = userLang.substring(0, 2);
+
 function App() {
   const [width, height] = useWindowSize();
   
@@ -19,6 +22,7 @@ function App() {
   
   return (
     <>
+      <p>User Lang: {`${userLang}-- ${defaultLocale}`}</p>
       <DebouncedInput
         placeholder='init value'
         onDebouncedValChange={val => {
