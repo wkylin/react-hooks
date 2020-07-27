@@ -5,6 +5,8 @@ import UseMemoDemo from './components/useMemo/UseMemoDemo';
 import useWindowSize from './components/useWindowSize/useWindowSize';
 import useEffectExceptOnMount from './components/useEffectExceptOnMount/useEffectExceptOnMount';
 import DebouncedInput from './components/DebouncedInput/DebouncedInput';
+import { RequireContext } from './components/requireContext/requireContext'
+
 
 const userLang = navigator.language;
 const defaultLocale = userLang.substring(0, 2);
@@ -33,6 +35,7 @@ function App() {
       <UseMemoDemo />
       <p>Window Width: {width}; Window Height: {height}</p>
       <MoveListApp />
+      <RequireContext />
     </>
   );
 }
