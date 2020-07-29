@@ -9,7 +9,11 @@ import { RequireContext } from './components/requireContext/requireContext';
 
 import Parent from './components/ReactSmartInRender/Parent';
 import Parent2 from './components/ReactSmartInRender/Parent2';
-import Parent3 from './components/ReactSmartInRender/Parent3';
+// import Parent3 from './components/ReactSmartInRender/Parent3';
+// import Parent4 from './components/ReactSmartInRender/Parent4';
+import Parent5 from './components/ReactSmartInRender/Parent5';
+// import Parent6 from './components/ReactSmartInRender/Parent6';
+import Parent7 from './components/ReactSmartInRender/Parent7';
 
 const userLang = navigator.language;
 const defaultLocale = userLang.substring(0, 2);
@@ -27,7 +31,7 @@ function App() {
   
   return (
     <>
-      <Parent3 />
+      <Parent7 />
       {/*<p>User Lang: {`${userLang}-- ${defaultLocale}`}</p>*/}
       {/*<DebouncedInput*/}
       {/*  placeholder='init value'*/}
