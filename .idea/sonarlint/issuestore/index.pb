@@ -76,3 +76,13 @@ _
 ,src/components/ReactSmartInRender/Parent2.js,1\6\16612b4a7ac142b0f3c1b259590a226f1081d454
 \
 ,src/components/ReactSmartInRender/Parent3.js,f\f\ff8fdb9d43e175bdc9dd8ef53bf29963cc62b538
+\
+,src/components/ReactSmartInRender/Parent4.js,9\b\9b003a886b960c7385cd614901175511c8584b52
+\
+,src/components/ReactSmartInRender/Parent5.js,2\7\275ab78ccaea36a651f7a798e1121a9bd876b188
+\
+,src/components/ReactSmartInRender/Parent6.js,c\8\c8fccb6b8b8eee5988911aaeea49241140dc6dd7
+\
+,src/components/ReactSmartInRender/Parent7.js,2\4\24e0b3eb3ea03c4d2c7b332c19c6d5f132b1011e
+X
+(src/components/useMemo/UseMemoCounter.js,a\1\a132f4d4159654bf03122bd3b927ef88680b851e
