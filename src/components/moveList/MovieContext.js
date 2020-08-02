@@ -21,7 +21,7 @@ export function MovieContext(props) {
       id: uuid()
     }
   ]);
-  
+
   return (
     <MyContext.Provider value={[movies, setMovies]}>
       {props.children}
