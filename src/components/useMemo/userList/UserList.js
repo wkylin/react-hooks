@@ -2,7 +2,7 @@
  * @Author: wkylin.w
  * @Date: 2020-08-02 09:09:05
  * @Last Modified by: wkylin.w
- * @Last Modified time: 2020-08-02 09:10:54
+ * @Last Modified time: 2020-08-02 09:46:32
  */
 import React from 'react';
 import List from './List.js';
@@ -13,6 +13,7 @@ const users = [
 ];
 
 function UserList() {
+  console.log('Render: List');
   const [text, setText] = React.useState('');
   const [search, setSearch] = React.useState('');
 
@@ -40,6 +41,7 @@ function UserList() {
   );
 
   return (
+
     <div>
       <input type='text' value={text} onChange={handleText} />
       <button type='button' onClick={handleSearch}>
@@ -50,4 +52,4 @@ function UserList() {
   );
 }
 
-export default UserList;
+export default React.memo(UserList);
