@@ -1,13 +1,31 @@
 /*
  * @Author: wkylin.w
- * @Date: 2020-08-02 09:11:51
+ * @Date: 2020-08-02 11:34:05
  * @Last Modified by: wkylin.w
- * @Last Modified time: 2020-08-02 09:30:46
+ * @Last Modified time: 2020-08-02 23:21:17
  */
-// import React, { useEffect } from 'react';
-import React from 'react';
 import './App.css';
-import UserList from './components/useMemo/userList/UserList';
+
+import React from 'react';
+
+// import FetchData from './components/fetchData/FetchData';
+import ErrorHandlingData from './components/fetchData/ErrorHandlingData';
+
+
+
+
+
+// import UseLocalStorageApp from './components/FunctionComponent/UseLocalStorage';
+// import ForwardRef from './components/FunctionComponent/ForwardRef';
+// import ReRender from './components/FunctionComponent/ReRender';
+// import ReRender from './components/FunctionComponent/ReRender';
+// import NoRender from './components/FunctionComponent/NoRender';
+
+// import React, { useEffect } from 'react';
+// import AsyncFnCom from './components/FunctionComponent/AsyncFnCom';
+
+// import FnCom from './components/FunctionComponent/FnCom';
+// import UserList from './components/useMemo/userList/UserList';
 
 
 // import MoveListApp from "./components/moveList/MoveListApp";
@@ -36,10 +54,12 @@ function App() {
   //
   // useEffect(() => {
   // }, [width]);
+
   return (
     <>
+      <ErrorHandlingData />
       {/* <Parent7 /> */}
-      <UserList />
+      {/* <UserList /> */}
       {/*<p>User Lang: {`${userLang}-- ${defaultLocale}`}</p>*/}
       {/*<DebouncedInput*/}
       {/*  placeholder='init value'*/}
