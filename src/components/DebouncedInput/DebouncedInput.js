@@ -5,7 +5,7 @@ function useDebouncedValue(initialVal, delay, callback) {
   const [val, setValue] = useState(initialVal);
   // state to store the timer
   const [timer, setTimer] = useState(null);
-  
+
   // function to be called on every change of input
   const handleInputChange = useCallback(
     event => {
@@ -21,7 +21,7 @@ function useDebouncedValue(initialVal, delay, callback) {
       // setting a new callback to execute
       const timerId = setTimeout(() => callback(inputVal), delay);
       setTimer(timerId);
-      
+
       // if components unmounts when there is a scheduled callback
       // then clearing out the callback
       return () => {
@@ -32,10 +32,10 @@ function useDebouncedValue(initialVal, delay, callback) {
     },
     [callback, delay, timer]
   );
-  
+
   // returning the val and the debounceChange which can be assigned
   // to a input onchange handler
-  
+
   return [val, handleInputChange];
 }
 
@@ -45,6 +45,6 @@ export default function InputComp({ onDebouncedValChange, delay, placeholder }) 
     delay,
     onDebouncedValChange
   );
-  
+
   return <input type="text" placeholder={placeholder} value={val} onChange={handleInputChange} />;
 }

@@ -1,5 +1,8 @@
 {
     "fileheader.Author": "wkylin.w",
     "fileheader.LastModifiedBy": "wkylin.w",
-    "editor.tabSize": 2
+    "editor.tabSize": 2,
+    "cSpell.ignoreWords": [
+        "unmounts"
+    ]
 }

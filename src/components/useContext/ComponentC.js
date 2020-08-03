@@ -1,13 +1,12 @@
-import React from 'react'
-import ComponentE from './ComponentE'
-
+import React from 'react';
+import ComponentE from './ComponentE';
 
 function ComponentC() {
-    return (
-        <div>
-            <ComponentE/>
-        </div>
-    )
+  return (
+    <div>
+      <ComponentE />
+    </div>
+  );
 }
 
-export default ComponentC
+export default ComponentC;

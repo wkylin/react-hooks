@@ -1,10 +1,9 @@
-import {useEffect} from 'react'
+import { useEffect } from 'react';
 
 function useDocTitle(count) {
-
-    useEffect(() => {
-        document.title = `Count ${count}`
-    }, [count])
+  useEffect(() => {
+    document.title = `Count ${count}`;
+  }, [count]);
 }
 
-export default useDocTitle
+export default useDocTitle;

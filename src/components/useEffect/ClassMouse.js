@@ -11,7 +11,7 @@ export class ClassMouse extends Component {
 
     logMousePosition = e => {
         console.log('Mouse event')
-        
+
         this.setState({
             x: e.clientX,
             y: e.clientY,
@@ -20,7 +20,7 @@ export class ClassMouse extends Component {
 
     componentDidMount() {
         console.log('mousemove');
-        
+
         window.addEventListener('mousemove', this.logMousePosition,false)
     }
     componentWillUnmount() {

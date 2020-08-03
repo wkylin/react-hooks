@@ -16,12 +16,12 @@ export class ClassCounterOne extends Component {
     componentDidUpdate(prevProps, prevState) {
         console.log('this.state.count',this.state.count);
         console.log('prevState.count',prevState.count);
-        
+
         if(prevState.count !== this.state.count){
             console.log('document.title');
             document.title = `Clicked ${this.state.count} time`
         }
-        
+
     }
 
     render() {

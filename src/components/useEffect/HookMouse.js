@@ -17,7 +17,7 @@ function HookMouse() {
         return () => {
             console.log('Component remove');
             window.removeEventListener('mousemove', logMousePosition, false)
-            
+
         }
     }, [])
     return (
