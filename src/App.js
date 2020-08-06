@@ -2,13 +2,14 @@
  * @Author: wkylin.w
  * @Date: 2020-08-02 11:34:05
  * @Last Modified by: wkylin.w
- * @Last Modified time: 2020-08-03 22:35:24
+ * @Last Modified time: 2020-08-06 23:05:22
  */
 import './App.css';
 
 import React from 'react';
 
-import ClickButton from './components/useRef/ClickButton';
+import MyComponent from './fetch/MyComponent'
+// import ClickButton from './components/useRef/ClickButton';
 // import FetchData from './components/fetchData/FetchData';
 // import ErrorHandlingData from './components/fetchData/ErrorHandlingData';
 
@@ -58,7 +59,7 @@ function App() {
 
   return (
     <>
-      <ClickButton />
+      <MyComponent />
       {/* <Parent7 /> */}
       {/* <UserList /> */}
       {/*<p>User Lang: {`${userLang}-- ${defaultLocale}`}</p>*/}
