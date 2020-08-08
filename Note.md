@@ -21,3 +21,5 @@ eslint --fix src/**/*.js
 },
 
   set-ExecutionPolicy RemoteSigned
+
+  <li style={Object.assign({}, fooStyles, barStyles)}>

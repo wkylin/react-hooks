@@ -2,21 +2,18 @@
  * @Author: wkylin.w
  * @Date: 2020-08-02 11:34:05
  * @Last Modified by: wkylin.w
- * @Last Modified time: 2020-08-06 23:05:22
+ * @Last Modified time: 2020-08-08 19:38:51
  */
 import './App.css';
 
 import React from 'react';
+import ThemeForContext from './components/useContext/ThemeForContext';
 
-import MyComponent from './fetch/MyComponent'
+// import MyComponent from './fetch/MyComponent'
+
 // import ClickButton from './components/useRef/ClickButton';
 // import FetchData from './components/fetchData/FetchData';
 // import ErrorHandlingData from './components/fetchData/ErrorHandlingData';
-
-
-
-
-
 // import UseLocalStorageApp from './components/FunctionComponent/UseLocalStorage';
 // import ForwardRef from './components/FunctionComponent/ForwardRef';
 // import ReRender from './components/FunctionComponent/ReRender';
@@ -59,7 +56,7 @@ function App() {
 
   return (
     <>
-      <MyComponent />
+      <ThemeForContext />
       {/* <Parent7 /> */}
       {/* <UserList /> */}
       {/*<p>User Lang: {`${userLang}-- ${defaultLocale}`}</p>*/}
@@ -74,7 +71,7 @@ function App() {
       {/*<MoveListApp />*/}
       {/*<RequireContext />*/}
     </>
-  );
+  )
 }
 
 export default App;
