@@ -67,7 +67,6 @@ export const useFetch = (input, opts = {}) => {
       data.current = null;
     };
     return cleanup;
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [input, opts]);
 
   if (loading.current) throw promiseResolver.promise;
