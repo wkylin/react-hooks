@@ -12,6 +12,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "eslint": "eslint --fix",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -30,6 +31,21 @@
     ]
   },
   "devDependencies": {
+    "babel-preset-airbnb": "^5.0.0",
+    "eslint": "^7.6.0",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.11",
     "uuidv4": "^6.2.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "eslint"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint",
+      "prettier --write"
+    ]
   }
 }
