@@ -2,13 +2,16 @@
  * @Author: wkylin.w
  * @Date: 2020-08-02 11:34:05
  * @Last Modified by: wkylin.w
- * @Last Modified time: 2020-08-08 22:29:00
+ * @Last Modified time: 2020-08-08 23:34:25
  */
-import './App.css';
+import './App.css'
 
-import React from 'react';
+import React from 'react'
+// import TodoList from './components/useWhenVisible/TodoList';
+// import NewsLetterBanner from './components/useTimeout/NewsLetterBanner'
+import ShoppingList from './components/useInterval/ShoppingList'
 // import ThemeForContext from './components/useContext/ThemeForContext';
-import InputSearch from './components/useDebounce/InputSearch';
+// import InputSearch from './components/useDebounce/InputSearch';
 
 // import MyComponent from './fetch/MyComponent'
 
@@ -26,7 +29,6 @@ import InputSearch from './components/useDebounce/InputSearch';
 
 // import FnCom from './components/FunctionComponent/FnCom';
 // import UserList from './components/useMemo/userList/UserList';
-
 
 // import MoveListApp from "./components/moveList/MoveListApp";
 // import UseMemoDemo from './components/useMemo/UseMemoDemo';
@@ -57,7 +59,14 @@ function App() {
 
   return (
     <>
-      <InputSearch />
+      <ShoppingList />
+      {/*
+        <NewsLetterBanner />
+        */}
+
+      {/* <TodoList /> */}
+
+      {/* <InputSearch /> */}
       {/* <ThemeForContext /> */}
       {/* <Parent7 /> */}
       {/* <UserList /> */}
@@ -76,4 +85,4 @@ function App() {
   )
 }
 
-export default App;
+export default App
