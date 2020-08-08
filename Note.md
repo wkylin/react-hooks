@@ -12,10 +12,12 @@ eslint src/**/*.js
 eslint --fix src/**/*.js
 
 "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged",
-      "pre-commit": "npm run lint:fix",
-      "pre-push": "npm run lint",
-      "pre-push": "npm run test:all"
-    }
-  },
+  "hooks": {
+    "pre-commit": "lint-staged",
+    "pre-commit": "npm run lint:fix",
+    "pre-push": "npm run lint",
+    "pre-push": "npm run test:all"
+  }
+},
+
+  set-ExecutionPolicy RemoteSigned
