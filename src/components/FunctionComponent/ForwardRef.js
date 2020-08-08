@@ -18,8 +18,9 @@ const ForwardRef = () => {
   );
 };
 
-const Input = forwardRef(({ value, handleChange }, ref) => (
-  <input type='text' value={value} onChange={handleChange} ref={ref} />
-));
+const forwardRefFn = ({ value, handleChange }, ref) => (
+  <input type="text" value={value} onChange={handleChange} ref={ref} />
+);
+const Input = forwardRef(forwardRefFn);
 
 export default ForwardRef;

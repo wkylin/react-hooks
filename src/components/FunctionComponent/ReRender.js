@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 const ReRender = () => {
-  const [greeting, setGreeting] = useState('Hello React!');
+  const [, setGreeting] = useState('Hello React!');
   const [count, setCount] = useState(0);
 
   const handleIncrement = () => setCount((currentCount) => currentCount + 1);
@@ -12,24 +12,25 @@ const ReRender = () => {
 
   return (
     <div>
-      <input type='text' onChange={handleChange} />
+      <input type="text" onChange={handleChange} />
 
       <Count count={count} />
 
-      <button type='button' onClick={handleIncrement}>
+      <button type="button" onClick={handleIncrement}>
         Increment
       </button>
-      <button type='button' onClick={handleDecrement}>
+      <button type="button" onClick={handleDecrement}>
         Decrement
       </button>
     </div>
   );
 };
 
-const Count = React.memo(({ count }) => {
+const countFn = ({ count }) => {
   console.log('Does it (re)render?');
 
   return <h1>{count}</h1>;
-});
+};
+const Count = React.memo(countFn);
 
 export default ReRender;

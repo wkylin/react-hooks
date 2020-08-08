@@ -1,43 +1,48 @@
-import React, { useState, memo, useCallback } from 'react';
+import React, { useState, memo } from 'react';
 
-const Child1 = memo(({ num, sayHiInChildren }) => {
+const Child1Fn = ({ num, sayHiInChildren }) => {
   console.log(`Child${num} rendered`);
   sayHiInChildren('Child1');
-  return (
-    <div style={{ border: '1px solid red', padding: '30px' }}>
-      Child1
-    </div>
-  );
-});
+  return <div style={{ border: '1px solid red', padding: '30px' }}>Child1</div>;
+};
+const Child1 = memo(Child1Fn);
 
 const areEqual = (prevProps, nextProps) => {
-  console.log('prevProps.num === nextProps.num', prevProps.num === nextProps.num);
-  console.log('prevProps.sayHiInChildren === nextProps.sayHiInChildren',prevProps.sayHiInChildren === nextProps.sayHiInChildren);
-  const isEqual = prevProps.num === nextProps.num && prevProps.sayHiInChildren === nextProps.sayHiInChildren;
+  console.log(
+    'prevProps.num === nextProps.num',
+    prevProps.num === nextProps.num
+  );
+  console.log(
+    'prevProps.sayHiInChildren === nextProps.sayHiInChildren',
+    prevProps.sayHiInChildren === nextProps.sayHiInChildren
+  );
+  const isEqual =
+    prevProps.num === nextProps.num &&
+    prevProps.sayHiInChildren === nextProps.sayHiInChildren;
   console.log('isEqual', isEqual);
   return isEqual;
 };
 
-
-const Child2 = memo(({ num, sayHiInChildren }) => {
+const Child2Fn = ({ num, sayHiInChildren }) => {
   console.log(`Child${num} rendered`);
   sayHiInChildren('Child2');
-  return (
-    <div style={{ border: '1px solid red', padding: '30px' }}>
-      Child2
-    </div>);
-}, areEqual);
+  return <div style={{ border: '1px solid red', padding: '30px' }}>Child2</div>;
+};
+const Child2 = memo(Child2Fn, areEqual);
 
 const Parent = () => {
   console.log('Parent rendered');
 
   let [count, setCount] = useState(0);
-  const handleMouseEnter = () => setCount(prevCount => prevCount + 1);
-  const sayHiInChildren = child => console.log(`hi~~~~~~~~~ - from ${child}`);
+  const handleMouseEnter = () => setCount((prevCount) => prevCount + 1);
+  const sayHiInChildren = (child) => console.log(`hi~~~~~~~~~ - from ${child}`);
   // const sayHiInChildren = useCallback(child => console.log(`hi~~~~~~~~~ — from ${child}`), [])
 
   return (
-    <div onMouseEnter={handleMouseEnter} style={{ border: '1px solid black', padding: '50px' }}>
+    <div
+      onMouseEnter={handleMouseEnter}
+      style={{ border: '1px solid black', padding: '50px' }}
+    >
       Parent. Count: {count}
       <Child1 num={1} sayHiInChildren={sayHiInChildren} />
       <Child2 num={2} sayHiInChildren={sayHiInChildren} />

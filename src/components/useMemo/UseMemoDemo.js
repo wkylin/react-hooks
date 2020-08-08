@@ -7,7 +7,7 @@ const fetchData = () => {
 
 const runHeavyCalc = data => {
   if (!data) return;
-  
+
   // Math.floor is not heavy, Use your imagination again
   console.log('Computing heavy func with data', data);
   return Math.floor(data * 100);
@@ -17,14 +17,14 @@ const UseMemoDemo = () => {
   const [count, setCount] = useState(0);
   const [data, setData] = useState(0);
   console.log("App rendered with count", count);
-  
+
   useEffect(() => {
     const data = fetchData();
     setData(data);
   }, []);
-  
+
   const result = useMemo(() => runHeavyCalc(data), [data]);
-  
+
   return (
     <div className="App">
       <h1>Hello World</h1>

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import useInput from './useInput'
 
 function UserForm() {
@@ -10,7 +10,6 @@ function UserForm() {
 
     const [firstName, bindFirstName, resetFirstName] = useInput('')
     const [lastName, bindLastName, resetLastName] = useInput('')
-    
 
     const submitHandler = e => {
         e.preventDefault()

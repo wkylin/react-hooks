@@ -44,9 +44,9 @@ function DataFetching() {
   }, [idFromButtonClick]);
   return (
     <div>
-      <input type='text' value={id} onChange={(e) => setId(e.target.value)} />
+      <input type="text" value={id} onChange={(e) => setId(e.target.value)} />
 
-      <button type='button' onClick={handleClick}>
+      <button type="button" onClick={handleClick}>
         Fetch Post
       </button>
       <div>{post.title}</div>

@@ -4,7 +4,7 @@ import useFetch from './useFetchData';
 
 const Err = ({ error }) => <span>Error:{error.message}</span>;
 
-const Loading = ({ loading }) => <span>Loading...</span>;
+const Loading = ({ loading }) => <span>{loading}</span>;
 
 const PostRemoteData = () => {
   const opts = useMemo(

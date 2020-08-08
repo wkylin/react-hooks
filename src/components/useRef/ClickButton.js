@@ -1,6 +1,6 @@
-import React, { useState, useRef } from 'react';
+import React, { useRef } from 'react';
 
-function ClickButton(props) {
+function ClickButton() {
   // const [count, setCount] = useState(0);
 
   // const onClickCount = () => {

@@ -1,16 +1,16 @@
 import React, { useState, useCallback } from 'react';
 
 function Parent() {
-  
+
   const [counter, setCounter] = useState(0);
-  
-  
+
+
   function handleEvent() {
     console.log("Just a function!");
   }
-  
+
   const memoizedFunction = useCallback(handleEvent, [])
-  
+
   return (
     <>
       <Child1 counter={counter} />
@@ -32,11 +32,10 @@ function Child1(props) {
   return <p>{props.counter}</p>;
 }
 
-let Child2 = React.memo(
-  function (props) {
+const Child2Fn = (props) => {
     console.log("Child2 Rendered");
     return <p>{props.handleEvent.toString()}</p>;
-  }
-);
+}
+let Child2 = React.memo(Child2Fn);
 
 export default Parent;

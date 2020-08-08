@@ -4,8 +4,8 @@
   "private": true,
   "dependencies": {
     "axios": "^0.19.2",
-    "react": "^16.10.0",
-    "react-dom": "^16.10.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
     "react-scripts": "^3.4.1"
   },
   "scripts": {
@@ -13,8 +13,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint": "eslint --ext .js --ext .jsx src",
-    "lint-fix": "eslint --fix --ext .js --fix --ext .jsx src"
+    "lint": "eslint src/**/*.js",
+    "lint:fix": "eslint --fix src/**/*.js",
+    "test:all": "set CI=true && react-scripts test && npm run lint"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -38,22 +39,21 @@
     "eslint-config-airbnb": "^18.2.0",
     "eslint-plugin-import": "^2.22.0",
     "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-react": "^7.20.5",
     "husky": "^4.2.5",
     "lint-staged": "^10.2.11",
-    "uuidv4": "^6.2.0"
+    "uuidv4": "^6.2.2"
   },
-  "pre-commit": [
-    "lint"
-  ],
   "husky": {
     "hooks": {
-      "pre-commit": "eslint"
+      "pre-commit": "lint-staged"
     }
   },
   "lint-staged": {
-    "*.js": [
-      "eslint --fix",
+    "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
+      "npm run lint",
+      "prettier --write",
       "git add"
     ]
   }

@@ -1,39 +1,39 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
 export class ClassMouse extends Component {
-    constructor(props){
-        super(props)
-        this.state = {
-            x:0,
-            y:0,
-        }
-    }
+  constructor(props) {
+    super(props);
+    this.state = {
+      x: 0,
+      y: 0,
+    };
+  }
 
-    logMousePosition = e => {
-        console.log('Mouse event')
+  logMousePosition = (e) => {
+    console.log('Mouse event');
 
-        this.setState({
-            x: e.clientX,
-            y: e.clientY,
-        })
-    }
+    this.setState({
+      x: e.clientX,
+      y: e.clientY,
+    });
+  };
 
-    componentDidMount() {
-        console.log('mousemove');
+  componentDidMount() {
+    console.log('mousemove');
 
-        window.addEventListener('mousemove', this.logMousePosition,false)
-    }
-    componentWillUnmount() {
-        window.removeEventListener('mousemove', this.logMousePosition, false)
-    }
+    window.addEventListener('mousemove', this.logMousePosition, false);
+  }
+  componentWillUnmount() {
+    window.removeEventListener('mousemove', this.logMousePosition, false);
+  }
 
-    render() {
-        return (
-            <div>
-                X: { this.state.x}, y: {this.state.y}
-            </div>
-        )
-    }
+  render() {
+    return (
+      <div>
+        X: {this.state.x}, y: {this.state.y}
+      </div>
+    );
+  }
 }
 
-export default ClassMouse
+export default ClassMouse;
