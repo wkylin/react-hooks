@@ -22,4 +22,18 @@ eslint --fix src/**/*.js
 
   set-ExecutionPolicy RemoteSigned
 
-  <li style={Object.assign({}, fooStyles, barStyles)}>
+  <!-- <li style={Object.assign({}, fooStyles, barStyles)}> -->
+
+  window.getComputedStyle(document.documentElement).getPropertyValue("--color-surface");
+  document.documentElement.style.setProperty("--color-surface", "black");
+
+function isObjectEmpty(value) {
+  return Object.prototype.toString.call(value) === "[object Object]" && JSON.stringify(value) === "{}"
+}
+
+function isEmptyObject(value) {
+  return Object.keys(value).length === 0 && value.constructor === Object;
+}
+// TypeError: Cannot covert undefined or null ot object
+goodEmptyCheck(undefined)
+goodEmptyCheck(null)

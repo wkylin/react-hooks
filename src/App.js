@@ -2,12 +2,13 @@
  * @Author: wkylin.w
  * @Date: 2020-08-02 11:34:05
  * @Last Modified by: wkylin.w
- * @Last Modified time: 2020-08-08 19:38:51
+ * @Last Modified time: 2020-08-08 22:29:00
  */
 import './App.css';
 
 import React from 'react';
-import ThemeForContext from './components/useContext/ThemeForContext';
+// import ThemeForContext from './components/useContext/ThemeForContext';
+import InputSearch from './components/useDebounce/InputSearch';
 
 // import MyComponent from './fetch/MyComponent'
 
@@ -56,7 +57,8 @@ function App() {
 
   return (
     <>
-      <ThemeForContext />
+      <InputSearch />
+      {/* <ThemeForContext /> */}
       {/* <Parent7 /> */}
       {/* <UserList /> */}
       {/*<p>User Lang: {`${userLang}-- ${defaultLocale}`}</p>*/}
