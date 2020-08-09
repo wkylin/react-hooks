@@ -2,16 +2,22 @@
  * @Author: wkylin.w
  * @Date: 2020-08-02 11:34:05
  * @Last Modified by: wkylin.w
- * @Last Modified time: 2020-08-09 14:22:20
+ * @Last Modified time: 2020-08-09 18:35:50
  */
 import './App.css'
 
 import React from 'react'
+
+import ShowModal from './components/useLockBodyScroll/ShowModal'
+
+// import MaximizablView from './components/useFullscreenStatus/MaximizableView';
+// import ImageLoadPage from './components/imageLoad/ImageLoadPage';
+
 // import TodoList from './components/useWhenVisible/TodoList';
 // import NewsLetterBanner from './components/useTimeout/NewsLetterBanner'
 // import ShoppingList from './components/useInterval/ShoppingList'
 // import RefButton from './components/useRef/useSyncedRef/RefButton'
-import UseClickAway from './components/useClickAway/UseClickAwayFn'
+// import UseClickAway from './components/useClickAway/UseClickAwayFn'
 // import ThemeForContext from './components/useContext/ThemeForContext';
 // import InputSearch from './components/useDebounce/InputSearch';
 
@@ -61,7 +67,10 @@ function App() {
 
   return (
     <>
-      <UseClickAway />
+      <ShowModal />
+      {/* <ImageLoadPage /> */}
+      {/* <MaximizablView backgroundColor="#efefef">全屏模式</MaximizablView> */}
+      {/* <UseClickAway /> */}
       {/* <RefButton /> */}
       {/* <ShoppingList /> */}
       {/*
