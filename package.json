@@ -15,8 +15,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "analyze": "source-map-explorer 'build/static/js/*.js'",
-    "lint": "eslint src/**/*.js",
-    "lint:fix": "eslint --fix src/**/*.js",
+    "lint": "eslint src/**/*.{js,jsx,ts,tsx,json}",
+    "lint:fix": "eslint --fix src/**/*.{js,jsx,ts,tsx,json}",
     "test:all": "set CI=true && react-scripts test && npm run lint"
   },
   "eslintConfig": {
@@ -45,6 +45,7 @@
     "eslint-plugin-react": "^7.20.5",
     "husky": "^4.2.5",
     "lint-staged": "^10.2.11",
+    "prettier": "^2.0.5",
     "uuidv4": "^6.2.2"
   },
   "husky": {
@@ -53,10 +54,9 @@
     }
   },
   "lint-staged": {
-    "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
+    "src/**/*.{js,jsx,ts,tsx,json}": [
       "npm run lint",
-      "prettier --write",
-      "git add"
+      "prettier --write"
     ]
   }
 }
