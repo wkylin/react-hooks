@@ -2,7 +2,7 @@
  * @Author: wkylin.w
  * @Date: 2020-08-02 11:34:05
  * @Last Modified by: wkylin.w
- * @Last Modified time: 2020-08-09 11:54:58
+ * @Last Modified time: 2020-08-09 14:22:20
  */
 import './App.css'
 
@@ -10,7 +10,8 @@ import React from 'react'
 // import TodoList from './components/useWhenVisible/TodoList';
 // import NewsLetterBanner from './components/useTimeout/NewsLetterBanner'
 // import ShoppingList from './components/useInterval/ShoppingList'
-import RefButton from './components/useRef/useSyncedRef/RefButton'
+// import RefButton from './components/useRef/useSyncedRef/RefButton'
+import UseClickAway from './components/useClickAway/UseClickAwayFn'
 // import ThemeForContext from './components/useContext/ThemeForContext';
 // import InputSearch from './components/useDebounce/InputSearch';
 
@@ -60,7 +61,8 @@ function App() {
 
   return (
     <>
-      <RefButton />
+      <UseClickAway />
+      {/* <RefButton /> */}
       {/* <ShoppingList /> */}
       {/*
         <NewsLetterBanner />
