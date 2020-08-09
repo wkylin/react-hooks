@@ -2,14 +2,15 @@
  * @Author: wkylin.w
  * @Date: 2020-08-02 11:34:05
  * @Last Modified by: wkylin.w
- * @Last Modified time: 2020-08-08 23:34:25
+ * @Last Modified time: 2020-08-09 11:54:58
  */
 import './App.css'
 
 import React from 'react'
 // import TodoList from './components/useWhenVisible/TodoList';
 // import NewsLetterBanner from './components/useTimeout/NewsLetterBanner'
-import ShoppingList from './components/useInterval/ShoppingList'
+// import ShoppingList from './components/useInterval/ShoppingList'
+import RefButton from './components/useRef/useSyncedRef/RefButton'
 // import ThemeForContext from './components/useContext/ThemeForContext';
 // import InputSearch from './components/useDebounce/InputSearch';
 
@@ -59,7 +60,8 @@ function App() {
 
   return (
     <>
-      <ShoppingList />
+      <RefButton />
+      {/* <ShoppingList /> */}
       {/*
         <NewsLetterBanner />
         */}
