@@ -37,3 +37,10 @@ function isEmptyObject(value) {
 // TypeError: Cannot covert undefined or null ot object
 goodEmptyCheck(undefined)
 goodEmptyCheck(null)
+
+const updateField = e => {
+  setValues({
+    ...form,
+    [e.target.name]: e.target.value
+  });
+};
