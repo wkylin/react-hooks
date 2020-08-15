@@ -2,14 +2,15 @@
  * @Author: wkylin.w
  * @Date: 2020-08-02 11:34:05
  * @Last Modified by: wkylin.w
- * @Last Modified time: 2020-08-12 22:44:44
+ * @Last Modified time: 2020-08-15 14:44:29
  */
 import './App.css'
 
 import React from 'react'
 
 // import ShowModal from './components/useLockBodyScroll/ShowModal'
-import LayoutApp from './layout/layouts'
+// import LayoutApp from './layout/layouts'
+import StateApp from './components/globalState/StateApp'
 
 // import MaximizablView from './components/useFullscreenStatus/MaximizableView';
 // import ImageLoadPage from './components/imageLoad/ImageLoadPage';
@@ -68,7 +69,8 @@ function App() {
 
   return (
     <>
-      <LayoutApp />
+      <StateApp />
+      {/* <LayoutApp /> */}
       {/* <ShowModal /> */}
       {/* <ImageLoadPage /> */}
       {/* <MaximizablView backgroundColor="#efefef">全屏模式</MaximizablView> */}
