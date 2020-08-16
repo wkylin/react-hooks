@@ -3,6 +3,12 @@
     "fileheader.LastModifiedBy": "wkylin.w",
     "editor.tabSize": 2,
     "cSpell.ignoreWords": [
+        "linebreak",
+        "nonwords",
+        "paren",
+        "parens",
+        "plusplus",
+        "symbolnew",
         "unmounts"
     ]
 }

@@ -74,3 +74,5 @@ import {
   ] = useTransition({
     timeoutMs: 5000
   });
+
+  npm install react-router@next react-router-dom@next
