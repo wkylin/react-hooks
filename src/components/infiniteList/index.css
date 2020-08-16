@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline-block;
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+}
+
+#block {
+  width: 100%;
+  height: 700px;
+}
+
+#list {
+  width: 100%;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  /* height: 600px;
+  overflow: scroll; */
+}
