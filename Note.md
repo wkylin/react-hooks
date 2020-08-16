@@ -44,3 +44,33 @@ const updateField = e => {
     [e.target.name]: e.target.value
   });
 };
+
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+  Link,
+  Outlet,
+  useRoutes,
+  Navigate,
+  useNavigate,
+  useParams
+} from 'react-router-dom';
+
+const rootElement = document.getElementById("root");
+// 进入 Concurrent 模式
+ReactDOM.createRoot(rootElement).render(<App />);
+
+import {
+  useDeferredValue,
+  useTransition,
+  Suspense,
+  SuspenseList
+ } from 'react';
+
+ const [
+    startTransition,
+    isPending
+  ] = useTransition({
+    timeoutMs: 5000
+  });

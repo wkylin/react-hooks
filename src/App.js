@@ -2,14 +2,14 @@
  * @Author: wkylin.w
  * @Date: 2020-08-02 11:34:05
  * @Last Modified by: wkylin.w
- * @Last Modified time: 2020-08-16 13:46:55
+ * @Last Modified time: 2020-08-16 18:27:06
  */
 import './App.css'
 
 import React from 'react'
 // import MoviesList from './components/langContext/MoviesList'
-// import UseRefApp from './components/useRef/UseRefApp'
-import DogList from './components/infiniteList/DogList'
+import UseRefApp from './components/useRef/UseRefApp'
+// import DogList from './components/infiniteList/DogList'
 
 // import ShowModal from './components/useLockBodyScroll/ShowModal'
 // import LayoutApp from './layout/layouts'
@@ -72,8 +72,8 @@ function App() {
 
   return (
     <>
-      <DogList />
-      {/* <UseRefApp /> */}
+      {/* <DogList /> */}
+      <UseRefApp />
       {/* <MoviesList /> */}
       {/* <StateApp /> */}
       {/* <LayoutApp /> */}
