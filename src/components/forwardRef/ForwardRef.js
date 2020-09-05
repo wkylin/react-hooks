@@ -2,7 +2,7 @@
  * @Author: wkylin.w
  * @Date: 2020-08-08 18:48:04
  * @Last Modified by: wkylin.w
- * @Last Modified time: 2020-08-08 18:54:17
+ * @Last Modified time: 2020-09-05 16:41:04
  */
 
 //  Call Child Method from Parent
@@ -10,20 +10,18 @@
 import React, { useRef, forwardRef, useImperativeHandle } from 'react'
 
 const ForwardRefFn = (props, ref) => {
-
   useImperativeHandle(ref, () => ({
     hello() {
       console.log('hello Child')
     },
-  }));
+  }))
 
   return <h1>Hi</h1>
 }
 const Child = forwardRef(ForwardRefFn)
 
-
 const Parent = () => {
-  const childRef = useRef();
+  const childRef = useRef()
   return (
     <div>
       <Child ref={childRef} />
@@ -32,8 +30,7 @@ const Parent = () => {
   )
 }
 
-export default Parent;
-
+export default Parent
 
 //const { Component } = React;
 // class Parent extends Component {
@@ -64,4 +61,4 @@ export default Parent;
 
 // useRef: 用于获取元素的原生DOM或者获取自定义组件所暴露出来的ref方法(父组件可以通过ref获取子组件，并调用相对应子组件中的方法)
 // useImperativeHandle:在函数式组件中，用于定义暴露给父组件的ref方法。
-// React.forwardRef: 将ref父类的ref作为参数传入函数式组件中，本身props只带有children这个参数，这样可以让子类转发父类的ref,当父类把ref挂在到子组件上时，子组件外部通过forwrardRef包裹，可以直接将父组件创建的ref挂在到子组件的某个dom元素上
+// React.forwardRef: 将ref父类的ref作为参数传入函数式组件中，本身props只带有children这个参数，这样可以让子类转发父类的ref,当父类把ref挂在到子组件上时，子组件外部通过forwardRef包裹，可以直接将父组件创建的ref挂在到子组件的某个dom元素上

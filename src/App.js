@@ -2,12 +2,13 @@
  * @Author: wkylin.w
  * @Date: 2020-08-02 11:34:05
  * @Last Modified by: wkylin.w
- * @Last Modified time: 2020-09-05 15:11:39
+ * @Last Modified time: 2020-09-05 18:32:47
  */
 import './App.css'
 
 import React from 'react'
-import UseForwardRef from './components/useRef/forwardRef'
+// import UseForwardRef from './components/useRef/forwardRef'
+import ContextStateProviderDemo from './components/useState/useContextStateIndex'
 // import MoviesList from './components/langContext/MoviesList'
 // import UseRefApp from './components/useRef/UseRefApp'
 // import LazyFn from './components/LazyFn/LazyFn'
@@ -74,7 +75,8 @@ function App() {
 
   return (
     <>
-      <UseForwardRef />
+      <ContextStateProviderDemo />
+      {/* <UseForwardRef /> */}
       {/* <LazyFn /> */}
       {/* <DogList /> */}
       {/* <UseRefApp /> */}
