@@ -76,3 +76,7 @@ import {
   });
 
   npm install react-router@next react-router-dom@next
+
+   Passing on props to each level is called Props Drilling.
+
+   Uncontrolled Elements do not notify the component about the change in Element Property or Values, due to which the render cycle is not triggered when a component is updated using “ref”.

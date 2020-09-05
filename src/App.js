@@ -2,13 +2,15 @@
  * @Author: wkylin.w
  * @Date: 2020-08-02 11:34:05
  * @Last Modified by: wkylin.w
- * @Last Modified time: 2020-08-16 18:27:06
+ * @Last Modified time: 2020-09-05 15:11:39
  */
 import './App.css'
 
 import React from 'react'
+import UseForwardRef from './components/useRef/forwardRef'
 // import MoviesList from './components/langContext/MoviesList'
-import UseRefApp from './components/useRef/UseRefApp'
+// import UseRefApp from './components/useRef/UseRefApp'
+// import LazyFn from './components/LazyFn/LazyFn'
 // import DogList from './components/infiniteList/DogList'
 
 // import ShowModal from './components/useLockBodyScroll/ShowModal'
@@ -72,8 +74,10 @@ function App() {
 
   return (
     <>
+      <UseForwardRef />
+      {/* <LazyFn /> */}
       {/* <DogList /> */}
-      <UseRefApp />
+      {/* <UseRefApp /> */}
       {/* <MoviesList /> */}
       {/* <StateApp /> */}
       {/* <LayoutApp /> */}

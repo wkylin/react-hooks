@@ -52,7 +52,7 @@ export default function InfiniteList(props) {
         })
     }
   }
-
+  // setTimeout(() => {debugger;}, 5000)
   return (
     <ul id="list">
       {props.state.map((img, i) => (
