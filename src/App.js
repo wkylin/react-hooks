@@ -2,7 +2,7 @@
  * @Author: wkylin.w
  * @Date: 2020-08-02 11:34:05
  * @Last Modified by: wkylin.w
- * @Last Modified time: 2020-09-06 09:44:33
+ * @Last Modified time: 2020-09-06 13:05:50
  */
 import './App.css'
 
@@ -13,13 +13,14 @@ import React from 'react'
 // import CorrectCodePart2 from './components/useEffect/corretCodePart2'
 // import CorrectCodePart3 from './components/useEffect/correctCodePart3'
 import UseContextReducerDemo from './components/useContextReducer/UseContextReducerDemo'
+
 // import MoviesList from './components/langContext/MoviesList'
 // import UseRefApp from './components/useRef/UseRefApp'
 // import LazyFn from './components/LazyFn/LazyFn'
 // import DogList from './components/infiniteList/DogList'
 
 // import ShowModal from './components/useLockBodyScroll/ShowModal'
-// import LayoutApp from './layout/layouts'
+// import LayoutApp from 'layout/layouts'
 // import StateApp from './components/globalState/StateApp'
 
 // import MaximizablView from './components/useFullscreenStatus/MaximizableView';
