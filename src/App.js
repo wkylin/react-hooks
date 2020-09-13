@@ -2,7 +2,7 @@
  * @Author: wkylin.w
  * @Date: 2020-08-02 11:34:05
  * @Last Modified by: wkylin.w
- * @Last Modified time: 2020-09-06 13:05:50
+ * @Last Modified time: 2020-09-13 12:10:34
  */
 import './App.css'
 
@@ -12,7 +12,8 @@ import React from 'react'
 // import CorrectCodePart1 from './components/useEffect/corretCodePart1'
 // import CorrectCodePart2 from './components/useEffect/corretCodePart2'
 // import CorrectCodePart3 from './components/useEffect/correctCodePart3'
-import UseContextReducerDemo from './components/useContextReducer/UseContextReducerDemo'
+// import UseContextReducerDemo from './components/useContextReducer/UseContextReducerDemo'
+import { ReverseSort } from './components/reverseSort/ReverseSort'
 
 // import MoviesList from './components/langContext/MoviesList'
 // import UseRefApp from './components/useRef/UseRefApp'
@@ -80,7 +81,8 @@ function App() {
 
   return (
     <>
-      <UseContextReducerDemo />
+      <ReverseSort />
+      {/* <UseContextReducerDemo /> */}
       {/* <CorrectCodePart3 /> */}
       {/* <CorrectCodePart2/> */}
       {/* <CorrectCodePart1 /> */}
