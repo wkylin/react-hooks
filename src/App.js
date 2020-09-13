@@ -2,14 +2,15 @@
  * @Author: wkylin.w
  * @Date: 2020-08-02 11:34:05
  * @Last Modified by: wkylin.w
- * @Last Modified time: 2020-09-13 17:47:45
+ * @Last Modified time: 2020-09-13 18:39:33
  */
 import './App.css'
 
 import React from 'react'
 
 // import ForwardRefParent from './components/forwardRef/ForwardRefParent'
-import FancyInputParent from 'components/forwardRef/FancyInput'
+// import FancyInputParent from './components/forwardRef/FancyInput'
+import UseInputFieldDemo from './components/customHooks/UseInputFieldDemo'
 
 // import UseForwardRef from './components/useRef/forwardRef'
 // import ContextStateProviderDemo from './components/useState/useContextStateIndex'
@@ -85,7 +86,8 @@ function App() {
 
   return (
     <>
-      <FancyInputParent />
+      <UseInputFieldDemo />
+      {/* <FancyInputParent /> */}
       {/* <ForwardRefParent /> */}
       {/* <ReverseSort /> */}
       {/* <UseContextReducerDemo /> */}
