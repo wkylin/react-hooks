@@ -2,7 +2,7 @@
  * @Author: wkylin.w
  * @Date: 2020-08-08 18:48:04
  * @Last Modified by: wkylin.w
- * @Last Modified time: 2020-09-05 16:41:04
+ * @Last Modified time: 2020-09-13 17:22:32
  */
 
 //  Call Child Method from Parent
@@ -20,7 +20,7 @@ const ForwardRefFn = (props, ref) => {
 }
 const Child = forwardRef(ForwardRefFn)
 
-const Parent = () => {
+const ForwardRefParent = () => {
   const childRef = useRef()
   return (
     <div>
@@ -30,7 +30,7 @@ const Parent = () => {
   )
 }
 
-export default Parent
+export default ForwardRefParent
 
 //const { Component } = React;
 // class Parent extends Component {

@@ -2,18 +2,22 @@
  * @Author: wkylin.w
  * @Date: 2020-08-02 11:34:05
  * @Last Modified by: wkylin.w
- * @Last Modified time: 2020-09-13 12:10:34
+ * @Last Modified time: 2020-09-13 17:47:45
  */
 import './App.css'
 
 import React from 'react'
+
+// import ForwardRefParent from './components/forwardRef/ForwardRefParent'
+import FancyInputParent from 'components/forwardRef/FancyInput'
+
 // import UseForwardRef from './components/useRef/forwardRef'
 // import ContextStateProviderDemo from './components/useState/useContextStateIndex'
 // import CorrectCodePart1 from './components/useEffect/corretCodePart1'
 // import CorrectCodePart2 from './components/useEffect/corretCodePart2'
 // import CorrectCodePart3 from './components/useEffect/correctCodePart3'
 // import UseContextReducerDemo from './components/useContextReducer/UseContextReducerDemo'
-import { ReverseSort } from './components/reverseSort/ReverseSort'
+// import { ReverseSort } from './components/reverseSort/ReverseSort'
 
 // import MoviesList from './components/langContext/MoviesList'
 // import UseRefApp from './components/useRef/UseRefApp'
@@ -81,7 +85,9 @@ function App() {
 
   return (
     <>
-      <ReverseSort />
+      <FancyInputParent />
+      {/* <ForwardRefParent /> */}
+      {/* <ReverseSort /> */}
       {/* <UseContextReducerDemo /> */}
       {/* <CorrectCodePart3 /> */}
       {/* <CorrectCodePart2/> */}
