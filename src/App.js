@@ -2,12 +2,13 @@
  * @Author: wkylin.w
  * @Date: 2020-08-02 11:34:05
  * @Last Modified by: wkylin.w
- * @Last Modified time: 2020-09-14 21:15:25
+ * @Last Modified time: 2020-09-14 21:25:26
  */
 import React from 'react'
 import './App.css'
 
-import InputComp from 'components/DebouncedInput/DebouncedInput'
+// import InputComp from 'components/DebouncedInput/DebouncedInput'
+import DebounceCallbackDemo from 'components/DebouncedInput/DebounceCallback'
 // import ForwardRefParent from './components/forwardRef/ForwardRefParent'
 // import FancyInputParent from './components/forwardRef/FancyInput'
 // import UseInputFieldDemo from './components/customHooks/UseInputFieldDemo'
@@ -86,13 +87,14 @@ function App() {
 
   return (
     <>
-      <InputComp
-        onDebouncedValChange={(val) => {
-          console.log(val)
+      <DebounceCallbackDemo />
+      {/* <InputComp
+        onDebouncedValChange={(a) => {
+          console.log(a);
         }}
         delay={500}
         placeholder="hello"
-      />
+      /> */}
       {/* <UseInputFieldDemo /> */}
       {/* <FancyInputParent /> */}
       {/* <ForwardRefParent /> */}
