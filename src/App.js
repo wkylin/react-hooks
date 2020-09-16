@@ -2,13 +2,15 @@
  * @Author: wkylin.w
  * @Date: 2020-08-02 11:34:05
  * @Last Modified by: wkylin.w
- * @Last Modified time: 2020-09-14 21:25:26
+ * @Last Modified time: 2020-09-15 23:26:10
  */
 import React from 'react'
 import './App.css'
 
 // import InputComp from 'components/DebouncedInput/DebouncedInput'
-import DebounceCallbackDemo from 'components/DebouncedInput/DebounceCallback'
+// import DebounceCallbackDemo from 'components/DebouncedInput/DebounceCallback'
+// import UsePreviousDemo from 'components/useState/UsePreviousDemo'
+import UseSetStateCallback from 'components/useState/UseSetStateCallbackDemo'
 // import ForwardRefParent from './components/forwardRef/ForwardRefParent'
 // import FancyInputParent from './components/forwardRef/FancyInput'
 // import UseInputFieldDemo from './components/customHooks/UseInputFieldDemo'
@@ -87,7 +89,9 @@ function App() {
 
   return (
     <>
-      <DebounceCallbackDemo />
+      <UseSetStateCallback />
+      {/* <UsePreviousDemo /> */}
+      {/* <DebounceCallbackDemo /> */}
       {/* <InputComp
         onDebouncedValChange={(a) => {
           console.log(a);
