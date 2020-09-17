@@ -17,7 +17,7 @@ const InputSearch = () => {
           `https://jsonplaceholder.typicode.com/posts`
         )
         const json = await response.json()
-        setResults(json);
+        setResults(json)
       }
 
       fetchResults()
@@ -40,4 +40,4 @@ const InputSearch = () => {
   )
 }
 
-export default InputSearch;
+export default InputSearch
