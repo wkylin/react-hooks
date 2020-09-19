@@ -2,16 +2,17 @@
  * @Author: wkylin.w
  * @Date: 2020-08-02 11:34:05
  * @Last Modified by: wkylin.w
- * @Last Modified time: 2020-09-17 21:14:02
+ * @Last Modified time: 2020-09-19 09:52:04
  */
 import React from 'react'
 import './App.css'
 
+import ModalDemo from 'components/reactModal/ModalDemo'
 // import InputComp from 'components/DebouncedInput/DebouncedInput'
 // import DebounceCallbackDemo from 'components/DebouncedInput/DebounceCallback'
 // import UsePreviousDemo from 'components/useState/UsePreviousDemo'
 // import UseSetStateCallback from 'components/useState/UseSetStateCallbackDemo'
-import UseMouseHookDemo from 'components/useMouseHook/UseMouseHookDemo'
+// import UseMouseHookDemo from 'components/useMouseHook/UseMouseHookDemo'
 // import ForwardRefParent from './components/forwardRef/ForwardRefParent'
 // import FancyInputParent from './components/forwardRef/FancyInput'
 // import UseInputFieldDemo from './components/customHooks/UseInputFieldDemo'
@@ -90,7 +91,8 @@ function App() {
 
   return (
     <>
-      <UseMouseHookDemo />
+      <ModalDemo />
+      {/* <UseMouseHookDemo /> */}
       {/* <UseSetStateCallback /> */}
       {/* <UsePreviousDemo /> */}
       {/* <DebounceCallbackDemo /> */}
