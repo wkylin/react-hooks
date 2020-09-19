@@ -1,10 +1,7 @@
 import { useEffect, useState } from 'react'
 
-import useThrottledEffect from '../DebouncedInput/useThrottledEffect'
-
-
 const useWindowSize = () => {
-  const [windowSize, setWindowSize] = useState({width: 0, height: 0})
+  const [windowSize, setWindowSize] = useState({ width: 0, height: 0 })
 
   useEffect(() => {
     let isMounted = true
@@ -13,15 +10,15 @@ const useWindowSize = () => {
       if (isMounted) {
         setWindowSize({
           width: window.innerWidth,
-          height: window.innerHeight
+          height: window.innerHeight,
         })
       }
     }
 
-    window.addEventListener('resize', useThrottledEffect(handleResize, 200))
+    window.addEventListener('resize', handleResize)
     return () => {
-      isMounted = false;
-      window.removeEventListener('resize', handleResize);
+      isMounted = false
+      window.removeEventListener('resize', handleResize)
     }
   }, [])
 
