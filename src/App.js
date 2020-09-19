@@ -2,12 +2,14 @@
  * @Author: wkylin.w
  * @Date: 2020-08-02 11:34:05
  * @Last Modified by: wkylin.w
- * @Last Modified time: 2020-09-19 09:52:04
+ * @Last Modified time: 2020-09-19 22:15:12
  */
 import React from 'react'
 import './App.css'
 
-import ModalDemo from 'components/reactModal/ModalDemo'
+// import ScrollTo from 'components/useAutoScroll/ScrollTo'
+import ScrollArrow from 'components/scrollArrowToTop/ScrollArrow'
+// import ModalDemo from 'components/reactModal/ModalDemo'
 // import InputComp from 'components/DebouncedInput/DebouncedInput'
 // import DebounceCallbackDemo from 'components/DebouncedInput/DebounceCallback'
 // import UsePreviousDemo from 'components/useState/UsePreviousDemo'
@@ -90,8 +92,10 @@ function App() {
   // }, [width]);
 
   return (
-    <>
-      <ModalDemo />
+    <div className="scrollBox">
+      <ScrollArrow />
+      {/* <ScrollTo /> */}
+      {/* <ModalDemo /> */}
       {/* <UseMouseHookDemo /> */}
       {/* <UseSetStateCallback /> */}
       {/* <UsePreviousDemo /> */}
@@ -146,7 +150,7 @@ function App() {
       {/*<p>Window Width: {width}; Window Height: {height}</p>*/}
       {/*<MoveListApp />*/}
       {/*<RequireContext />*/}
-    </>
+    </div>
   )
 }
 

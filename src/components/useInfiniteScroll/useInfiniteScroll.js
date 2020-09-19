@@ -77,3 +77,11 @@ export default function useInfiniteScroll({
 
   return [page, loaderRef, scrollContainerRef]
 }
+
+// if (window.scrollY + window.outerHeight >= document.body.clientHeight) {
+//   callback();
+// }
+
+// https://github.com/aleckan53/infinite-scroll
+// react-visibility-sensor
+// use-is-in-viewport

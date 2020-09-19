@@ -26,3 +26,8 @@ const useWindowSize = () => {
 }
 
 export default useWindowSize
+
+// [-0].includes(+0) true
+// [NaN].indexOf(NaN) true
+// [NaN].indexOf(NaN) true
+// scrollIntoView
