@@ -2,13 +2,17 @@
  * @Author: wkylin.w
  * @Date: 2020-08-02 11:34:05
  * @Last Modified by: wkylin.w
- * @Last Modified time: 2020-09-19 22:15:12
+ * @Last Modified time: 2020-09-20 11:43:34
  */
 import React from 'react'
 import './App.css'
 
 // import ScrollTo from 'components/useAutoScroll/ScrollTo'
-import ScrollArrow from 'components/scrollArrowToTop/ScrollArrow'
+// import ScrollArrow from 'components/scrollArrowToTop/ScrollArrow'
+// import UseInfiniteScrollToDemo from 'components/useInfiniteScroll/UseInfiniteScrollToDemo'
+// import UseScrollDirectionDemo from 'components/useInfiniteScroll/UseScrollDirectionDemo'
+import TransitionHeader from 'components/TransitionHeader/TransitionHeader'
+// import { ScrollToTopController } from 'components/ScrollToTopController/ScrollToTopController'
 // import ModalDemo from 'components/reactModal/ModalDemo'
 // import InputComp from 'components/DebouncedInput/DebouncedInput'
 // import DebounceCallbackDemo from 'components/DebouncedInput/DebounceCallback'
@@ -93,7 +97,12 @@ function App() {
 
   return (
     <div className="scrollBox">
-      <ScrollArrow />
+      {/*<div>*/}
+      {/* <ScrollToTopController /> */}
+      <TransitionHeader />
+      {/* <UseScrollDirectionDemo /> */}
+      {/* <UseInfiniteScrollToDemo /> */}
+      {/* <ScrollArrow /> */}
       {/* <ScrollTo /> */}
       {/* <ModalDemo /> */}
       {/* <UseMouseHookDemo /> */}
