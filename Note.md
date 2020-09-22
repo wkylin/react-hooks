@@ -1,4 +1,9 @@
 
+https://github.com/zenghongtu/react-use-chinese
+https://github.com/ava/use-http
+
+https://ysfaran.github.io/blog/post/0002-use-state-with-promise/
+
 While React memo is used to wrap React components to prevent re-renderings,
 useMemo is used to memoize values.
 

@@ -36,3 +36,8 @@ const ScrollArrow = () => {
 }
 
 export default ScrollArrow
+
+// elem && elem.scrollIntoView();
+// elem.scrollIntoView(false);
+// elem.scrollIntoView({ block: "end" });
+// elem.scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });

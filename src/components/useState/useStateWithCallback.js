@@ -41,3 +41,5 @@ const useStateWithCallbackLazy = (initialValue) => {
 export { useStateWithCallbackInstant, useStateWithCallbackLazy }
 
 export default useStateWithCallback
+
+// https://ysfaran.github.io/blog/post/0002-use-state-with-promise/
