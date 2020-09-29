@@ -1,4 +1,20 @@
 
+
+"husky": {
+    "hooks": {
+        "pre-commit": "lint-staged"
+    }
+},
+"lint-staged": {
+    "*.{js,ts,tsx}": [
+        "eslint --quiet --fix"
+    ],
+    "*.{json,md,html}": [
+        "prettier --write"
+    ]
+}
+
+
 https://github.com/zenghongtu/react-use-chinese
 https://github.com/ava/use-http
 
