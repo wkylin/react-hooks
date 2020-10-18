@@ -8,7 +8,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "analyze": "source-map-explorer 'build/static/js/*.js'",
-    "lint": "eslint src/**/*.{js,jsx,ts,tsx,json}",
+    "lint": "eslint src/**/*.{js,jsx,ts,tsx,json,md}",
     "lint:fix": "eslint --fix src/**/*.{js,jsx,ts,tsx,json,css,scss,md}",
     "test:all": "set CI=true && react-scripts test && npm run lint"
   },

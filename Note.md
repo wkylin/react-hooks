@@ -1,12 +1,15 @@
 
 
+// git show branch:file
+// git cherry-pick <commit_id>
+
 "husky": {
     "hooks": {
         "pre-commit": "lint-staged"
     }
 },
 "lint-staged": {
-    "*.{js,ts,tsx}": [
+    "*.{js,ts,tsx,md}": [
         "eslint --quiet --fix"
     ],
     "*.{json,md,html}": [
