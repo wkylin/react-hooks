@@ -3,6 +3,12 @@
 // git show branch:file
 // git cherry-pick <commit_id>
 
+// npx npkill
+// npm install -g depcheck
+// scroll-data-hook
+
+//https://www.freecodecamp.org/news/how-to-add-commit-hooks-to-git-with-husky-to-automate-code-tasks/
+
 "husky": {
     "hooks": {
         "pre-commit": "lint-staged"
