@@ -3,6 +3,8 @@
 // git show branch:file
 // git cherry-pick <commit_id>
 
+// https://chrisfrew.in/blog/persist-and-remember-page-scroll-position-with-react-hooks/
+
 "husky": {
     "hooks": {
         "pre-commit": "lint-staged"
@@ -108,3 +110,35 @@ import {
    Passing on props to each level is called Props Drilling.
 
    Uncontrolled Elements do not notify the component about the change in Element Property or Values, due to which the render cycle is not triggered when a component is updated using “ref”.
+
+
+
+{
+  "name": "app-name",
+  "version": "0.0.1",
+  "dependencies": { },
+  "devDependencies": { }
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "stylelint": "stylelint src/**/index.css",
+    "stylelint:fix": "stylelint src/**/index.css --fix",
+    "📦": "bundlesize",
+    "prettification": "prettier --write \"**/*.js\""
+  },
+  "lint-staged": {
+    "*.{js,jsx}": [
+      "npm run prettification",
+      "git add"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": [
+        "lint-staged"
+      ]
+    }
+  }
+}
