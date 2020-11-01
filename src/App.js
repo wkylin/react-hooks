@@ -2,7 +2,7 @@
  * @Author: wkylin.w
  * @Date: 2020-08-02 11:34:05
  * @Last Modified by: wkylin.w
- * @Last Modified time: 2020-11-01 14:32:31
+ * @Last Modified time: 2020-11-01 18:57:31
  */
 import React from 'react'
 import './App.css'
@@ -12,7 +12,9 @@ import './App.css'
 // import UseInfiniteScrollToDemo from 'components/useInfiniteScroll/UseInfiniteScrollToDemo'
 // import UseScrollDirectionDemo from 'components/useInfiniteScroll/UseScrollDirectionDemo'
 // import TransitionHeader from 'components/TransitionHeader/TransitionHeader'
-import AAndB from 'eventEmitter/AAndB'
+// import AAndB from 'eventEmitter/AAndB'
+// import UseTheForceUpdate from 'components/useForceUpdate/UseTheForceUpdate'
+import MeasureExample from 'components/useClientRect/MeasureExample'
 // import { ScrollToTopController } from 'components/ScrollToTopController/ScrollToTopController'
 // import ModalDemo from 'components/reactModal/ModalDemo'
 // import InputComp from 'components/DebouncedInput/DebouncedInput'
@@ -98,7 +100,9 @@ function App() {
 
   return (
     <div className="scrollBox">
-      <AAndB />
+      <MeasureExample />
+      {/* <UseTheForceUpdate /> */}
+      {/* <AAndB /> */}
       {/*<div>*/}
       {/* <ScrollToTopController /> */}
       {/* <TransitionHeader /> */}
