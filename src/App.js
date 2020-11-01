@@ -2,7 +2,7 @@
  * @Author: wkylin.w
  * @Date: 2020-08-02 11:34:05
  * @Last Modified by: wkylin.w
- * @Last Modified time: 2020-09-20 11:43:34
+ * @Last Modified time: 2020-11-01 14:32:31
  */
 import React from 'react'
 import './App.css'
@@ -11,7 +11,8 @@ import './App.css'
 // import ScrollArrow from 'components/scrollArrowToTop/ScrollArrow'
 // import UseInfiniteScrollToDemo from 'components/useInfiniteScroll/UseInfiniteScrollToDemo'
 // import UseScrollDirectionDemo from 'components/useInfiniteScroll/UseScrollDirectionDemo'
-import TransitionHeader from 'components/TransitionHeader/TransitionHeader'
+// import TransitionHeader from 'components/TransitionHeader/TransitionHeader'
+import AAndB from 'eventEmitter/AAndB'
 // import { ScrollToTopController } from 'components/ScrollToTopController/ScrollToTopController'
 // import ModalDemo from 'components/reactModal/ModalDemo'
 // import InputComp from 'components/DebouncedInput/DebouncedInput'
@@ -97,9 +98,10 @@ function App() {
 
   return (
     <div className="scrollBox">
+      <AAndB />
       {/*<div>*/}
       {/* <ScrollToTopController /> */}
-      <TransitionHeader />
+      {/* <TransitionHeader /> */}
       {/* <UseScrollDirectionDemo /> */}
       {/* <UseInfiniteScrollToDemo /> */}
       {/* <ScrollArrow /> */}
