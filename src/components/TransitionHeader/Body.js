@@ -1,5 +1,7 @@
 import React from 'react'
 
+// import PromptIndex from 'components/promptComponent/PromptIndex';
+
 function Body() {
   return (
     <section className="section">
@@ -20,6 +22,8 @@ function Body() {
           </div>
         </div>
       </div>
+
+      {/* <PromptIndex /> */}
     </section>
   )
 }
