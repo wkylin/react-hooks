@@ -12,6 +12,7 @@ import './App.css'
 // import UseInfiniteScrollToDemo from 'components/useInfiniteScroll/UseInfiniteScrollToDemo'
 // import UseScrollDirectionDemo from 'components/useInfiniteScroll/UseScrollDirectionDemo'
 import TransitionHeader from 'components/TransitionHeader/TransitionHeader'
+// import GraphqlVoyager from 'components/graphqlVoyager/GraphqlVoyager'
 // import AAndB from 'eventEmitter/AAndB'
 // import UseTheForceUpdate from 'components/useForceUpdate/UseTheForceUpdate'
 // import MeasureExample from 'components/useClientRect/MeasureExample'
@@ -100,6 +101,7 @@ function App() {
 
   return (
     <div className="scrollBox">
+      {/* <GraphqlVoyager /> */}
       {/* <MeasureExample /> */}
       {/* <UseTheForceUpdate /> */}
       {/* <AAndB /> */}
