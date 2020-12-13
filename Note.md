@@ -1,4 +1,9 @@
 
+yarn global add license-checker
+yarn global add improved-yarn-audit
+yarn global add depcheck
+
+
 // https://medium.com/swlh/24-modern-es6-code-snippets-to-solve-practical-js-problems-3609f301859e
 
 // https://dev.to/bornfightcompany/top-10-react-hook-libraries-4065?utm_source=digest_mailer&utm_medium=email&utm_campaign=digest_email
