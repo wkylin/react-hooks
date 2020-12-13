@@ -2,7 +2,7 @@
  * @Author: wkylin.w
  * @Date: 2020-08-02 11:34:05
  * @Last Modified by: wkylin.w
- * @Last Modified time: 2020-11-22 08:25:52
+ * @Last Modified time: 2020-12-13 10:56:28
  */
 import React from 'react'
 import './App.css'
@@ -11,7 +11,8 @@ import './App.css'
 // import ScrollArrow from 'components/scrollArrowToTop/ScrollArrow'
 // import UseInfiniteScrollToDemo from 'components/useInfiniteScroll/UseInfiniteScrollToDemo'
 // import UseScrollDirectionDemo from 'components/useInfiniteScroll/UseScrollDirectionDemo'
-import TransitionHeader from 'components/TransitionHeader/TransitionHeader'
+// import TransitionHeader from 'components/TransitionHeader/TransitionHeader'
+import LoadingSkeleton from 'components/reactLoadingSkeleton'
 // import GraphqlVoyager from 'components/graphqlVoyager/GraphqlVoyager'
 // import AAndB from 'eventEmitter/AAndB'
 // import UseTheForceUpdate from 'components/useForceUpdate/UseTheForceUpdate'
@@ -101,13 +102,14 @@ function App() {
 
   return (
     <div className="scrollBox">
+      <LoadingSkeleton />
       {/* <GraphqlVoyager /> */}
       {/* <MeasureExample /> */}
       {/* <UseTheForceUpdate /> */}
       {/* <AAndB /> */}
       {/*<div>*/}
       {/* <ScrollToTopController /> */}
-      <TransitionHeader />
+      {/* <TransitionHeader /> */}
       {/* <UseScrollDirectionDemo /> */}
       {/* <UseInfiniteScrollToDemo /> */}
       {/* <ScrollArrow /> */}

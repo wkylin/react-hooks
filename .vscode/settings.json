@@ -9,6 +9,7 @@
         "parens",
         "plusplus",
         "symbolnew",
-        "unmounts"
+        "unmounts",
+        "usercard"
     ]
 }
