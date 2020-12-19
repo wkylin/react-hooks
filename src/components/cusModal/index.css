@@ -110,13 +110,14 @@
 }
 
 .showTips {
-  animation: 2s 3s 0 backwards showTips;
+  animation: 1s 2s 2 backwards showTips;
   overflow: hidden;
   transform: scale(1);
   opacity: 1;
   z-index: 2;
+  background: #fff;
   position: fixed;
-  bottom: 20px;
+  bottom: 15px;
   right: 50px;
   width: 60px;
   height:30px;
@@ -125,7 +126,7 @@
 
 @keyframes showTips {
   from {
-    transform: scale(1);
+    transform: scale(0);
     opacity: 0;
     z-index: -1;
   }
