@@ -28,7 +28,7 @@ const CusModal = () => {
       </button>
       {isShowModal && <div className="shadow"></div>}
       <div className={isShowModal ? 'showModal mainModal' : 'hideModal'}>
-        <h1>Main Modal</h1>
+        <h1>Modal</h1>
       </div>
 
       {isShow && <div className={isShowModal ? 'tips' : 'showTips'}>tips</div>}
