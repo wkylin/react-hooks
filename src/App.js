@@ -2,7 +2,7 @@
  * @Author: wkylin.w
  * @Date: 2020-08-02 11:34:05
  * @Last Modified by: wkylin.w
- * @Last Modified time: 2020-12-19 11:03:24
+ * @Last Modified time: 2020-12-27 15:32:01
  */
 import React from 'react'
 import './App.css'
@@ -13,7 +13,8 @@ import './App.css'
 // import UseScrollDirectionDemo from 'components/useInfiniteScroll/UseScrollDirectionDemo'
 // import TransitionHeader from 'components/TransitionHeader/TransitionHeader'
 // import LoadingSkeleton from 'components/reactLoadingSkeleton'
-import CusModal from 'components/cusModal/CusModal'
+// import CusModal from 'components/cusModal/CusModal'
+import Portal from 'components/Teleportation/Portal'
 // import GraphqlVoyager from 'components/graphqlVoyager/GraphqlVoyager'
 // import AAndB from 'eventEmitter/AAndB'
 // import UseTheForceUpdate from 'components/useForceUpdate/UseTheForceUpdate'
@@ -103,7 +104,8 @@ function App() {
 
   return (
     <div className="scrollBox">
-      <CusModal />
+      <Portal />
+      {/* <CusModal /> */}
       {/* <LoadingSkeleton /> */}
       {/* <GraphqlVoyager /> */}
       {/* <MeasureExample /> */}
