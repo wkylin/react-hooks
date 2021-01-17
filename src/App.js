@@ -2,7 +2,7 @@
  * @Author: wkylin.w
  * @Date: 2020-08-02 11:34:05
  * @Last Modified by: wkylin.w
- * @Last Modified time: 2020-12-27 15:32:01
+ * @Last Modified time: 2021-01-16 15:44:37
  */
 import React from 'react'
 import './App.css'
@@ -14,7 +14,8 @@ import './App.css'
 // import TransitionHeader from 'components/TransitionHeader/TransitionHeader'
 // import LoadingSkeleton from 'components/reactLoadingSkeleton'
 // import CusModal from 'components/cusModal/CusModal'
-import Portal from 'components/Teleportation/Portal'
+// import Portal from 'components/Teleportation/Portal'
+import MyUseDimensions from 'components/useDimensions/useDimensionsDemo'
 // import GraphqlVoyager from 'components/graphqlVoyager/GraphqlVoyager'
 // import AAndB from 'eventEmitter/AAndB'
 // import UseTheForceUpdate from 'components/useForceUpdate/UseTheForceUpdate'
@@ -104,7 +105,8 @@ function App() {
 
   return (
     <div className="scrollBox">
-      <Portal />
+      <MyUseDimensions />
+      {/* <Portal /> */}
       {/* <CusModal /> */}
       {/* <LoadingSkeleton /> */}
       {/* <GraphqlVoyager /> */}

@@ -42,3 +42,19 @@ function handleTextResponse (response) {
       }
     })
 }
+
+// https://medium.com/better-programming/deep-insights-into-javascripts-fetch-api-e8e8203c0965
+// let controller = new AbortController()
+// setTimeout(() => controller.abort(), 1000)
+
+// try {
+//   let response = await fetch('/long-operation', {
+//     signal: controller.signal,
+//   })
+// } catch (err) {
+//   if (err.name == 'AbortError') {
+//     console.log('Aborted!')
+//   } else {
+//     throw err
+//   }
+// }
