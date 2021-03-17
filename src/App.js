@@ -2,12 +2,11 @@
  * @Author: wkylin.w
  * @Date: 2020-08-02 11:34:05
  * @Last Modified by: wkylin.w
- * @Last Modified time: 2021-03-16 21:26:00
+ * @Last Modified time: 2021-03-17 08:27:26
  */
 
 import React from 'react'
 import './App.css'
-
 
 // import ScrollTo from 'components/useAutoScroll/ScrollTo'
 // import ScrollArrow from 'components/scrollArrowToTop/ScrollArrow'
@@ -15,8 +14,8 @@ import './App.css'
 // import UseScrollDirectionDemo from 'components/useInfiniteScroll/UseScrollDirectionDemo'
 // import TransitionHeader from 'components/TransitionHeader/TransitionHeader'
 // import LoadingSkeleton from 'components/reactLoadingSkeleton'
-// import CusModal from 'components/cusModal/CusModal'
-import UseScrollListenerDemo from 'components/useScrollListener/UseScrollListenerDemo'
+import CusModal from 'components/cusModal/CusModal'
+// import UseScrollListenerDemo from 'components/useScrollListener/UseScrollListenerDemo'
 // import Portal from 'components/Teleportation/Portal'
 // import MyUseDimensions from 'components/useDimensions/useDimensionsDemo'
 // import GraphqlVoyager from 'components/graphqlVoyager/GraphqlVoyager'
@@ -109,10 +108,10 @@ function App() {
   return (
     <div className="scrollBox">
       {/* <Reference /> */}
-      <UseScrollListenerDemo />
+      {/* <UseScrollListenerDemo /> */}
       {/* <MyUseDimensions /> */}
       {/* <Portal /> */}
-      {/* <CusModal /> */}
+      <CusModal />
       {/* <LoadingSkeleton /> */}
       {/* <GraphqlVoyager /> */}
       {/* <MeasureExample /> */}
