@@ -16,7 +16,7 @@
     "extends": "react-app"
   },
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "eslint-config-react-app": "^5.2.1",
     "eslint-plugin-flowtype": "^5.2.0",
     "graphql-voyager": "^1.0.0-rc.31",
