@@ -1,4 +1,9 @@
 
+
+https://loadable-components.com/
+https://reactrouter.com/web/guides/code-splitting
+
+
 yarn global add license-checker
 yarn global add improved-yarn-audit
 yarn global add depcheck
