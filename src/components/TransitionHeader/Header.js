@@ -28,14 +28,14 @@ function Header() {
   return (
     <header className={`header ${shadowStyle} ${hiddenStyle}`}>
       <div className="logo">
-        <Link to="/">Logo</Link>
+        <Link to="/" className="">前端市界</Link>
       </div>
       <ul className="links">
         <li className="link-item">
           <Link to="/home">Home</Link>
         </li>
-        <li className="link-item">about</li>
-        <li className="link-item">join</li>
+        <li className="link-item">About Me</li>
+        {/* <li className="link-item">Join Us</li> */}
       </ul>
     </header>
   )

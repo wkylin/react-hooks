@@ -2,19 +2,18 @@
  * @Author: wkylin.w
  * @Date: 2020-08-02 11:34:05
  * @Last Modified by: wkylin.w
- * @Last Modified time: 2021-03-28 18:36:51
+ * @Last Modified time: 2021-03-28 19:15:56
  */
 
 import React from 'react'
 import './App.css'
-
+import TransitionHeader from 'components/TransitionHeader/TransitionHeader'
 // import ScrollTo from 'components/useAutoScroll/ScrollTo'
 // import ScrollArrow from 'components/scrollArrowToTop/ScrollArrow'
 // import UseInfiniteScrollToDemo from 'components/useInfiniteScroll/UseInfiniteScrollToDemo'
 // import UseScrollDirectionDemo from 'components/useInfiniteScroll/UseScrollDirectionDemo'
-// import TransitionHeader from 'components/TransitionHeader/TransitionHeader'
 // import LoadingSkeleton from 'components/reactLoadingSkeleton'
-import CusModal from 'components/cusModal/CusModal'
+// import CusModal from 'components/cusModal/CusModal'
 // import AvoidRaceDemo from 'components/avoidRaceDemo/AvoidRaceDemo'
 // import UseScrollListenerDemo from 'components/useScrollListener/UseScrollListenerDemo'
 // import Portal from 'components/Teleportation/Portal'
@@ -107,7 +106,8 @@ function App() {
   // }, [width]);
 
   return (
-    <div className="scrollBox">
+    <div className="scroll-box">
+      <TransitionHeader />
       {/* <MyComponent /> */}
 
       {/* <UseDimensionDemo/> */}
@@ -116,7 +116,7 @@ function App() {
       {/* <UseScrollListenerDemo /> */}
       {/* <MyUseDimensions /> */}
       {/* <Portal /> */}
-      <CusModal />
+      {/* <CusModal /> */}
 
       {/* <LoadingSkeleton /> */}
       {/* <GraphqlVoyager /> */}
@@ -125,7 +125,7 @@ function App() {
       {/* <AAndB /> */}
       {/*<div>*/}
       {/* <ScrollToTopController /> */}
-      {/* <TransitionHeader /> */}
+
       {/* <UseScrollDirectionDemo /> */}
       {/* <UseInfiniteScrollToDemo /> */}
       {/* <ScrollArrow /> */}

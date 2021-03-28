@@ -1,5 +1,7 @@
 import React from 'react'
-
+import WeiXin from './images/weixin.jpg'
+import Search from './images/search.png'
+import Logo from './images/Logo.png'
 // import PromptIndex from 'components/promptComponent/PromptIndex';
 
 function Body() {
@@ -7,9 +9,15 @@ function Body() {
     <section className="section">
       <div className="content">
         <div className="cards">
-          <div className="card-box">hello</div>
-          <div className="card-box">hello</div>
-          <div className="card-box">hello</div>
+          <div className="card-box">
+            <img src={Logo} height="100%" />
+          </div>
+          <div className="card-box">
+            <img src={WeiXin} height="100%" />
+          </div>
+          <div className="card-box">
+            <img src={Search} height="100%" />
+          </div>
         </div>
         <div className="main">
           <div className="main-left">

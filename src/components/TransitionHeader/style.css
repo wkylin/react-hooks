@@ -40,31 +40,42 @@ body {
 }
 
 .logo {
-  margin: 0 24px;
-  font-size: 28px;
+  margin: 0 12px;
+  font-size: 1.5rem;
   color: #f59596;
+}
+
+a, a:link, a:hover, a:visited {
+  color: #333;
+  text-decoration: none;
+  outline: none;
 }
 
 .links {
   padding: 0;
-  margin: 0 24px;
+  margin: 0 12px;
 }
 
 .link-item {
   display: inline-block;
   margin: 0 12px;
   cursor: pointer;
+  font-size: 1rem;
 }
 
 .section {
-  height: 100%;
-  min-height: 2000px;
+  /* height: 100%; */
+  /* min-height: 2000px; */
   background-color: rgb(245, 245, 245);
-  padding-top: 131px;
+  padding-top: 130px;
   margin: 0 auto;
-  padding: 130px 48px 24px;
+  padding: 130px 24px 10px;
 }
 
+img {
+  max-width: 100%;
+  /* max-height: 100%; */
+}
 .content {
   background-color: #d8d8d8;
   display: flex;
@@ -76,7 +87,7 @@ body {
 
 .main {
   display: flex;
-  padding: 16px;
+  /* padding: 16px; */
   padding-top: 0;
 }
 
@@ -104,20 +115,29 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 16px;
+  /* padding: 16px; */
   color: #8b8b8b;
 }
 
 .card-box {
   display: flex;
-  flex: 1 1;
+  flex: 1;
   justify-content: center;
   background-color: rgb(245, 245, 245);
   align-items: center;
   margin: 16px;
-  height: 200px;
+  height: 160px;
   border-radius: 3px;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 667px) {
+  .cards{
+    display: block;
+  }
+  .card-box {
+    display: block;
+  }
 }
 
 .right-box {
