@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "http://localhost:3001/static/css/main.672b05b1.chunk.css",
+    "main.js": "http://localhost:3001/static/js/main.ed55366c.chunk.js",
+    "main.js.map": "http://localhost:3001/static/js/main.ed55366c.chunk.js.map",
+    "runtime-main.js": "http://localhost:3001/static/js/runtime-main.ffb3da9f.js",
+    "runtime-main.js.map": "http://localhost:3001/static/js/runtime-main.ffb3da9f.js.map",
+    "static/js/2.223a43ab.chunk.js": "http://localhost:3001/static/js/2.223a43ab.chunk.js",
+    "static/js/2.223a43ab.chunk.js.map": "http://localhost:3001/static/js/2.223a43ab.chunk.js.map",
+    "index.html": "http://localhost:3001/index.html",
+    "static/css/main.672b05b1.chunk.css.map": "http://localhost:3001/static/css/main.672b05b1.chunk.css.map",
+    "static/js/2.223a43ab.chunk.js.LICENSE.txt": "http://localhost:3001/static/js/2.223a43ab.chunk.js.LICENSE.txt",
+    "static/media/search.df6eb9b6.png": "http://localhost:3001/static/media/search.df6eb9b6.png",
+    "static/media/weixin.a2985355.jpg": "http://localhost:3001/static/media/weixin.a2985355.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ffb3da9f.js",
+    "static/js/2.223a43ab.chunk.js",
+    "static/css/main.672b05b1.chunk.css",
+    "static/js/main.ed55366c.chunk.js"
+  ]
+}
