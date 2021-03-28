@@ -10,7 +10,7 @@ const useFetch = (url, options) => {
       setLoading(true)
       try {
         const res = await fetch(url, options)
-        const json = await res.json()
+        const json = await res.json() // res.blob() res.text()
         if (!signal.aborted) {
           setResponse(json)
         }

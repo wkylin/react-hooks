@@ -1,16 +1,13 @@
+import React from 'react'
 
-import {useLayoutEffect} from 'react';
-
-
-const useLockBodyScroll =  () => {
-  useLayoutEffect(() => {
-    // Get original body overflow
+const useLockBodyScroll = (hide = true) => {
+  React.useLayoutEffect(() => {
     const originalStyle = window.getComputedStyle(document.body).overflow
-    // Prevent scrolling on mount
-    document.body.style.overflow = 'hidden';
-    // Re-enable scrolling when component unmounts
-    return () => (document.body.style.overflow = originalStyle)
-  }, []) // Empty array ensures effect is only run on mount and unmount
-}
+    document.body.style.overflow = hide === true ? 'hidden' : originalStyle
 
-export default useLockBodyScroll;
+    return () => {
+      document.body.style.overflow = originalStyle
+    }
+  }, [hide])
+}
+export default useLockBodyScroll

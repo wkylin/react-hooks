@@ -1,80 +1,79 @@
-import { useReducer, useRef, useMemo, useEffect } from 'react';
+import { useReducer, useRef, useMemo, useEffect } from 'react'
 
-const useForceUpdate = () => useReducer((state) => !state, false)[1];
+const useForceUpdate = () => useReducer((state) => !state, false)[1]
 
 const createPromiseResolver = () => {
-  let resolve;
+  let resolve
   const promise = new Promise((r) => {
-    resolve = r;
-  });
-  return { resolve, promise };
-};
+    resolve = r
+  })
+  return { resolve, promise }
+}
 
 const createFetchError = (error) => {
-  return error;
-};
-
+  return error
+}
 
 export const useFetch = (input, opts = {}) => {
-  const forceUpdate = useForceUpdate();
-  const error = useRef(null);
-  const loading = useRef(false);
-  const data = useRef(null);
-  const promiseResolver = useMemo(createPromiseResolver, [input, opts]);
+  const forceUpdate = useForceUpdate()
+  const error = useRef(null)
+  const loading = useRef(false)
+  const data = useRef(null)
+  const promiseResolver = useMemo(createPromiseResolver, [input, opts])
 
   useEffect(() => {
-    let finished = false;
-    const abortController = new AbortController();
-    (async () => {
-      if (!input) return;
+    let finished = false
+    const abortController = new AbortController()
+    ;(async () => {
+      if (!input) return
       // start fetching
-      loading.current = true;
-      forceUpdate();
+      loading.current = true
+      forceUpdate()
       const onFinish = (e, d) => {
         if (!finished) {
-          finished = true;
-          error.current = e;
-          data.current = d;
-          loading.current = false;
+          finished = true
+          error.current = e
+          data.current = d
+          loading.current = false
         }
-      };
+      }
       try {
-        const { readBody = (body) => body.json(), ...init } = opts;
+        const { readBody = (body) => body.json(), ...init } = opts
         const response = await fetch(input, {
           ...init,
-          signal: abortController.signal
-        });
+          signal: abortController.signal,
+        })
         // check response
         if (response.ok) {
-          const body = await readBody(response);
-          onFinish(null, body);
+          const body = await readBody(response)
+          onFinish(null, body)
         } else {
-          onFinish(createFetchError(response), null);
+          onFinish(createFetchError(response), null)
         }
       } catch (e) {
-        onFinish(e, null);
+        onFinish(e, null)
       }
       // finish fetching
-      promiseResolver.resolve();
-    })();
+      promiseResolver.resolve()
+    })()
     const cleanup = () => {
       if (!finished) {
-        finished = true;
-        abortController.abort();
+        finished = true
+        abortController.abort()
       }
-      error.current = null;
-      loading.current = false;
-      data.current = null;
-    };
-    return cleanup;
-  }, [input, opts]);
+      error.current = null
+      loading.current = false
+      data.current = null
+    }
+    return cleanup
+  }, [input, opts])
 
-  if (loading.current) throw promiseResolver.promise;
+  if (loading.current) throw promiseResolver.promise
   return {
     error: error.current,
     data: data.current,
-    loading: loading.current
-  };
-};
+    loading: loading.current,
+  }
+}
 
-export default useFetch;
+export default useFetch

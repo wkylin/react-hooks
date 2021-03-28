@@ -43,6 +43,36 @@ function handleTextResponse(response) {
   })
 }
 
+// function handleBlobResponse(response) {
+//   return response.blob().then((blob) => {
+//     if (response.ok) {
+//       return blob
+//     } else {
+//       return Promise.reject({
+//         status: response.status,
+//         statusText: response.statusText
+//       })
+//     }
+//   })
+// }
+
+// https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
+
+// request和response（包括 fetch() 方法）都会试着自动设置 Content-Type。如果没有设置 Content-Type 值，发送的请求也会自动设值。
+
+// fetch('flowers.jpg')
+//   .then((response) => {
+//     if (!response.ok) {
+//       throw new Error('Network response was not ok')
+//     }
+//     return response.blob()
+//   })
+//   .then((myBlob) => {
+//     myImage.src = URL.createObjectURL(myBlob)
+//   })
+//   .catch((error) => {
+//     console.error('There has been a problem with your fetch operation:', error)
+//   })
 
 // const fetch_retry = async (url, options, n) => {
 //   let error

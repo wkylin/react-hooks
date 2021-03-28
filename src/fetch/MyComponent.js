@@ -1,18 +1,18 @@
-import React, { Suspense } from 'react';
-import ErrorBoundary from './ErrorBoundary';
+import React, { Suspense } from 'react'
+import MyErrorBoundary from './MyErrorBoundary'
 
-const PostRemoteData = React.lazy(() => import('./PostRemoteData'));
+const PostRemoteData = React.lazy(() => import('./PostRemoteData'))
 
 const MyComponent = () => (
   <div>
-    <ErrorBoundary>
+    <MyErrorBoundary>
       <Suspense fallback={<div>Loading...</div>}>
         <section>
           <PostRemoteData />
         </section>
       </Suspense>
-    </ErrorBoundary>
+    </MyErrorBoundary>
   </div>
-);
+)
 
-export default MyComponent;
+export default MyComponent

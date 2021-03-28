@@ -2,7 +2,7 @@
  * @Author: wkylin.w
  * @Date: 2020-08-02 11:34:05
  * @Last Modified by: wkylin.w
- * @Last Modified time: 2021-03-21 20:32:49
+ * @Last Modified time: 2021-03-28 18:36:51
  */
 
 import React from 'react'
@@ -15,6 +15,7 @@ import './App.css'
 // import TransitionHeader from 'components/TransitionHeader/TransitionHeader'
 // import LoadingSkeleton from 'components/reactLoadingSkeleton'
 import CusModal from 'components/cusModal/CusModal'
+// import AvoidRaceDemo from 'components/avoidRaceDemo/AvoidRaceDemo'
 // import UseScrollListenerDemo from 'components/useScrollListener/UseScrollListenerDemo'
 // import Portal from 'components/Teleportation/Portal'
 // import MyUseDimensions from 'components/useDimensions/useDimensionsDemo'
@@ -62,7 +63,7 @@ import CusModal from 'components/cusModal/CusModal'
 // import InputSearch from './components/useDebounce/InputSearch';
 
 // import MyComponent from './fetch/MyComponent'
-
+// import UseDimensionDemo from './components/useDimension/UseDimensionDemo'
 // import ClickButton from './components/useRef/ClickButton';
 // import FetchData from './components/fetchData/FetchData';
 // import ErrorHandlingData from './components/fetchData/ErrorHandlingData';
@@ -107,6 +108,10 @@ function App() {
 
   return (
     <div className="scrollBox">
+      {/* <MyComponent /> */}
+
+      {/* <UseDimensionDemo/> */}
+      {/* <AvoidRaceDemo /> */}
       {/* <Reference /> */}
       {/* <UseScrollListenerDemo /> */}
       {/* <MyUseDimensions /> */}
@@ -178,7 +183,7 @@ function App() {
       {/*/>*/}
       {/*<UseMemoDemo />*/}
       {/*<p>Window Width: {width}; Window Height: {height}</p>*/}
-      {/*<MoveListApp />*/}
+      {/* <MoveListApp /> */}
       {/*<RequireContext />*/}
     </div>
   )

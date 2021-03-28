@@ -28,6 +28,7 @@
     "react-loading-skeleton": "^2.1.1",
     "react-router-dom": "^5.2.0",
     "react-scripts": "^4.0.0",
+    "resize-observer-polyfill": "^1.5.1",
     "source-map-explorer": "^2.5.0"
   },
   "devDependencies": {
