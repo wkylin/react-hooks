@@ -45,7 +45,10 @@ body {
   color: #f59596;
 }
 
-a, a:link, a:hover, a:visited {
+a,
+a:link,
+a:hover,
+a:visited {
   color: #333;
   text-decoration: none;
   outline: none;
@@ -132,7 +135,7 @@ img {
 }
 
 @media (max-width: 667px) {
-  .cards{
+  .cards {
     display: block;
   }
   .card-box {
