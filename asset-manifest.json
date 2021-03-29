@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "https://wkylin.github.io/react-hooks/static/css/main.672b05b1.chunk.css",
-    "main.js": "https://wkylin.github.io/react-hooks/static/js/main.d8c3e743.chunk.js",
-    "main.js.map": "https://wkylin.github.io/react-hooks/static/js/main.d8c3e743.chunk.js.map",
+    "main.js": "https://wkylin.github.io/react-hooks/static/js/main.3ede58ac.chunk.js",
+    "main.js.map": "https://wkylin.github.io/react-hooks/static/js/main.3ede58ac.chunk.js.map",
     "runtime-main.js": "https://wkylin.github.io/react-hooks/static/js/runtime-main.a9983efe.js",
     "runtime-main.js.map": "https://wkylin.github.io/react-hooks/static/js/runtime-main.a9983efe.js.map",
     "static/js/2.223a43ab.chunk.js": "https://wkylin.github.io/react-hooks/static/js/2.223a43ab.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.a9983efe.js",
     "static/js/2.223a43ab.chunk.js",
     "static/css/main.672b05b1.chunk.css",
-    "static/js/main.d8c3e743.chunk.js"
+    "static/js/main.3ede58ac.chunk.js"
   ]
 }
