@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.672b05b1.chunk.css",
-    "main.js": "/static/js/main.b8e7374e.chunk.js",
-    "main.js.map": "/static/js/main.b8e7374e.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.50a3e559.js",
-    "runtime-main.js.map": "/static/js/runtime-main.50a3e559.js.map",
-    "static/js/2.223a43ab.chunk.js": "/static/js/2.223a43ab.chunk.js",
-    "static/js/2.223a43ab.chunk.js.map": "/static/js/2.223a43ab.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/main.672b05b1.chunk.css.map": "/static/css/main.672b05b1.chunk.css.map",
-    "static/js/2.223a43ab.chunk.js.LICENSE.txt": "/static/js/2.223a43ab.chunk.js.LICENSE.txt",
-    "static/media/search.df6eb9b6.png": "/static/media/search.df6eb9b6.png",
-    "static/media/weixin.a2985355.jpg": "/static/media/weixin.a2985355.jpg"
+    "main.css": "https://wkylin.github.io/react-hooks/static/css/main.672b05b1.chunk.css",
+    "main.js": "https://wkylin.github.io/react-hooks/static/js/main.d8c3e743.chunk.js",
+    "main.js.map": "https://wkylin.github.io/react-hooks/static/js/main.d8c3e743.chunk.js.map",
+    "runtime-main.js": "https://wkylin.github.io/react-hooks/static/js/runtime-main.a9983efe.js",
+    "runtime-main.js.map": "https://wkylin.github.io/react-hooks/static/js/runtime-main.a9983efe.js.map",
+    "static/js/2.223a43ab.chunk.js": "https://wkylin.github.io/react-hooks/static/js/2.223a43ab.chunk.js",
+    "static/js/2.223a43ab.chunk.js.map": "https://wkylin.github.io/react-hooks/static/js/2.223a43ab.chunk.js.map",
+    "index.html": "https://wkylin.github.io/react-hooks/index.html",
+    "static/css/main.672b05b1.chunk.css.map": "https://wkylin.github.io/react-hooks/static/css/main.672b05b1.chunk.css.map",
+    "static/js/2.223a43ab.chunk.js.LICENSE.txt": "https://wkylin.github.io/react-hooks/static/js/2.223a43ab.chunk.js.LICENSE.txt",
+    "static/media/search.df6eb9b6.png": "https://wkylin.github.io/react-hooks/static/media/search.df6eb9b6.png",
+    "static/media/weixin.a2985355.jpg": "https://wkylin.github.io/react-hooks/static/media/weixin.a2985355.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.50a3e559.js",
+    "static/js/runtime-main.a9983efe.js",
     "static/js/2.223a43ab.chunk.js",
     "static/css/main.672b05b1.chunk.css",
-    "static/js/main.b8e7374e.chunk.js"
+    "static/js/main.d8c3e743.chunk.js"
   ]
 }
