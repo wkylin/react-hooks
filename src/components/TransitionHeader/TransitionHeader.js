@@ -9,7 +9,7 @@ import './style.css'
 function TransitionHeader() {
   return (
     <div className="wrapper">
-      <Router>
+      <Router basename="/react-hooks">
         {/* <DynamicScrollToTop /> */}
         <Header />
         <Switch>
