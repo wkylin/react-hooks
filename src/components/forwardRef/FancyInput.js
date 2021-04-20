@@ -31,3 +31,6 @@ const FancyInputParent = () => {
 }
 
 export default FancyInputParent
+
+
+// https://hamidrezanazemi.medium.com/calling-childs-function-from-parent-with-react-hooks-f3209193657d
