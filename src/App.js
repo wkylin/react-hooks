@@ -2,12 +2,13 @@
  * @Author: wkylin.w
  * @Date: 2020-08-02 11:34:05
  * @Last Modified by: wkylin.w
- * @Last Modified time: 2021-03-28 19:15:56
+ * @Last Modified time: 2021-04-25 07:35:33
  */
 
 import React from 'react'
 import './App.css'
-import TransitionHeader from 'components/TransitionHeader/TransitionHeader'
+// import TransitionHeader from 'components/TransitionHeader/TransitionHeader'
+import ParentRef from 'components/useRef/forwardRef/index'
 // import ScrollTo from 'components/useAutoScroll/ScrollTo'
 // import ScrollArrow from 'components/scrollArrowToTop/ScrollArrow'
 // import UseInfiniteScrollToDemo from 'components/useInfiniteScroll/UseInfiniteScrollToDemo'
@@ -107,7 +108,10 @@ function App() {
 
   return (
     <div className="scroll-box">
-      <TransitionHeader />
+      {/* <TransitionHeader /> */}
+
+      <div>我的中国心</div>
+      <ParentRef />
       {/* <MyComponent /> */}
 
       {/* <UseDimensionDemo/> */}

@@ -27,6 +27,7 @@
   ],
   "rules": {
     "react/prop-types": 0,
-    "react-hooks/rules-of-hooks": "error"
+    "react-hooks/rules-of-hooks": "error",
+    "debugger": 0
   }
 }
