@@ -16,7 +16,8 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "update": "yarn upgrade-interactive --latest",
-    "ncu": "ncu -u"
+    "ncu": "ncu -u",
+    "prepare": "husky install"
   },
   "eslintConfig": {
     "extends": "react-app"

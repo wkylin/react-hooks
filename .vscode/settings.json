@@ -3,15 +3,16 @@
     "fileheader.LastModifiedBy": "wkylin.w",
     "editor.tabSize": 2,
     "cSpell.ignoreWords": [
-        "asyncchronous",
-        "linebreak",
-        "nonwords",
-        "paren",
-        "parens",
-        "plusplus",
-        "renke",
-        "symbolnew",
-        "unmounts",
-        "usercard"
+      "asyncchronous",
+      "linebreak",
+      "nonwords",
+      "paren",
+      "parens",
+      "plusplus",
+      "predeploy",
+      "renke",
+      "symbolnew",
+      "unmounts",
+      "usercard"
     ]
 }
