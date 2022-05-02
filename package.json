@@ -23,7 +23,7 @@
     "extends": "react-app"
   },
   "dependencies": {
-    "axios": "^0.21.2",
+    "axios": "^0.26.1",
     "env-cmd": "^10.1.0",
     "eslint-config-react-app": "^6.0.0",
     "eslint-plugin-flowtype": "^5.7.1",
